@@ -7,11 +7,12 @@ import { Link } from 'react-router-dom';
 class CurriculumVitae extends Component {
     state = { 
         paperWidth:950,
+        paperHeight:1227,
         minHorizontalPadding:20,
 
         isTablet:false,
         isMobile:false,
-        pdf:false
+        pdf:true
      }
 
     componentDidMount=()=>{
@@ -66,6 +67,7 @@ class CurriculumVitae extends Component {
                     // minWidth:`${this.state.paperWidth}px`,
                     background:'rgba(0,0,0,.7)',
                     padding: this.state.pdf?'0':`5vh ${this.state.minHorizontalPadding}px 5vh`,
+                    // transform: this.state.pdf?'scale(.85)':''
                 }}
             >
             <div
@@ -75,17 +77,20 @@ class CurriculumVitae extends Component {
                     // textAlign: 'center',
                     // width: this.state.isTablet||this.state.isMobile?'100%':`${this.state.paperWidth}px`,
                     maxWidth:`${this.state.paperWidth}px`,
+                    // height: `${this.state.paperHeight}px`,
                     padding:'0',
                     margin:'auto',
                     borderRadius:'2px',
                     overflow:'hidden',
-                    boxShadow:'0px 2px 8px 2px rgba(0,0,0,0.5)'
+                    boxShadow:'0px 2px 8px 2px rgba(0,0,0,0.5)',
+                    // transform: this.state.pdf?'scale(.85)':''
                 }}
                 // compact
                 // piled
             >
                 <Grid style={{
                     width: isDesktop?`${this.state.paperWidth}px`:'100%',
+                    height: isDesktop?`${this.state.paperHeight}px`:'auto',
                     // width: `${this.state.paperWidth}px`,
                     margin:'auto',
                     padding: '0',
@@ -147,7 +152,7 @@ class CurriculumVitae extends Component {
                                     <div 
                                         style={{
                                             textAlign:'left',
-                                            display:'inline-block',
+                                            display:isDesktop?'block':'inline-block',
                                             // minWidth:isDesktop?'0':'250px',
                                             maxWidth:'350px',
                                             width:isDesktop?'auto':this.state.isTablet?'calc(100% - 250px - 40px)':'100%',
@@ -273,7 +278,7 @@ class CurriculumVitae extends Component {
                                                 maxWidth:'170px'
                                         }}>
                                             <Icon name='map marker alternate' style={{marginBottom:'5px',fontSize:'18px'}}/>
-                                            <p style={{textAlign:'left'}}>Jalan Rambai no.9, Kebayoran Baru, Jakarta Selatan, 12130</p>
+                                            <div style={{textAlign:'center'}}><p>Gandaria,</p>Jakarta Selatan</div>
                                         </div>
                                     </div>
     
@@ -300,7 +305,6 @@ class CurriculumVitae extends Component {
                                 </div>
 
 
-
                                 {/* <div style={{marginBottom:'40px'}}>
                                     <Header as={'h4'} style={{color:'white'}}>About Me</Header>
                                     <p>Hello, as coding enthusiast, I have a lot of passion for solving problems using analytical and logical thinking. Quote from Steve Jobs, "Everybody should learn to program a computer, because it teaches you how to think."</p>
@@ -315,13 +319,15 @@ class CurriculumVitae extends Component {
                                     }}>
                                     <Header as={'h4'} style={{color:'white'}}>Skills</Header>
                                     <Label style={style.skillLabel}>HTML/CSS</Label>
+                                    {/* <Label style={style.skillLabel}>Responsive Design</Label> */}
                                     <Label style={style.skillLabel}>Javascript</Label>
                                     <Label style={style.skillLabel}>React JS</Label>
+                                    <Label style={style.skillLabel}>Vue JS</Label>
+                                    <Label style={style.skillLabel}>React Native</Label>
                                     <Label style={style.skillLabel}>Node JS/Express</Label>
                                     <Label style={style.skillLabel}>My Sql</Label>
-                                    <Label style={style.skillLabel}>React Native</Label>
-                                    <Label style={style.skillLabel}>"Debugging"</Label>
-                                    
+                                    <Label style={style.skillLabel}>Git</Label>
+                                    {/* <Label style={style.skillLabel}>"Debugging"</Label> */}
                                 </div>
 
                                 <div style={{
@@ -342,6 +348,18 @@ class CurriculumVitae extends Component {
                                             textAlign:'left'
                                         }}
                                     >
+                                        {/* {
+                                            this.state.pdf?
+                                            <List.Item 
+                                                as={'a'} 
+                                                href='https://cv-indohalim.web.app/' 
+                                                target="_blank"
+                                            >
+                                                <div>cv (online)</div>
+                                                cv-indohalim.web.app
+                                            </List.Item>
+                                            : null
+                                        } */}
                                         <List.Item 
                                             as={'a'} 
                                             href='https://popstore-indo.herokuapp.com/' 
@@ -436,18 +454,18 @@ class CurriculumVitae extends Component {
                             style={{
                                 // backgroundColor:'rgba(0,0,0,.1)',
                                 backgroundColor:'rgba(230,230,230,1)',
-                                width:isDesktop?'650px':'100%',
-                                padding:this.state.isMobile?'40px 20px 45px':'40px 40px 45px',
+                                width:isDesktop?`${this.state.paperWidth-300}px`:'100%',
+                                padding:this.state.isMobile?'40px 20px 60px':'40px 60px 60px 40px',
                                 color:'rgba(0,0,0,.8)'
                             }}
                         >
                             
                             <div style={{
                                 display:isDesktop?'block':'none',
-                                margin:this.state.pdf?'20px 0 30px':'30px 0',
+                                margin:this.state.pdf?'20px 0 40px':'30px 0',
                                 border:'0px solid black'
                                 }}>
-                                <Header as={'h1'} style={{fontSize:'51px',fontWeight:'300',marginBottom:this.state.pdf?'20px':'40px'}}>Indo Halim</Header>
+                                <Header as={'h1'} style={{fontSize:'51px',fontWeight:'300',marginBottom:'40px'}}>Indo Halim</Header>
 
 
                                 <div style={{
@@ -509,11 +527,11 @@ class CurriculumVitae extends Component {
                                             borderTop:'0',
                                             borderBottom:'0',
                                             // padding:'28px 14px',
-                                            paddingRight:'20px',
+                                            paddingRight:'50px',
                                             maxWidth:'170px'
                                     }}>
                                         <Icon name='map marker alternate' style={{marginBottom:'5px',fontSize:'18px'}}/>
-                                        <p style={{textAlign:'left'}}>Jalan Rambai no.9, Kebayoran Baru, Jakarta Selatan, 12130</p>
+                                        <div style={{textAlign:'center'}}><p>Gandaria,</p>Jakarta Selatan</div>
                                     </div>
                                 </div>
 
@@ -529,16 +547,16 @@ class CurriculumVitae extends Component {
                                 <div style={{fontSize:'18px'}}>Whatsapp: +6281999041167</div> */}
                             </div>
 
-                            <div style={{marginBottom:'20px',border:'0px solid black'}}>
-                                <h1 style={{fontWeight:'400',letterSpacing:'3px',marginBottom:'.2em'}}>About Me</h1>
-                                <div style={{fontSize:'15px'}}>
+                            <div style={{marginBottom:'30px',border:'0px solid black'}}>
+                                <h1 style={{fontWeight:'400',letterSpacing:'3px',marginBottom:'.4em'}}>About Me</h1>
+                                <div style={{fontSize:'15px', marginLeft:'15px'}}>
                                     Hello, as coding enthusiast, I have a lot of passion for solving problems using analytical and logical thinking because it teaches me how to think. Therefore, I am keen to pursue a career in programming to improve my way of thinking in order to be a better person individually and in community.
                                 </div>
                             </div>
 
-                            <div style={{marginBottom:'20px',border:'0px solid black'}}>
-                                <h1 style={{fontWeight:'400',letterSpacing:'3px',marginBottom:'.2em'}}>Education</h1>
-                                <div>
+                            <div style={{marginBottom:'30px',border:'0px solid black'}}>
+                                <h1 style={{fontWeight:'400',letterSpacing:'3px',marginBottom:'.4em'}}>Education</h1>
+                                <div style={{marginLeft:'15px'}}>
                                     {/* <div>2006 - 2009</div> */}
                                     <div style={{fontSize:'15px',fontWeight:'600',marginBottom:'5px'}}>King's College, University of London (2006 - 2009)</div>
                                     <div style={{fontSize:'15px',fontWeight:'400'}}>Bachelor of Engineering </div>
@@ -547,7 +565,7 @@ class CurriculumVitae extends Component {
 
                                 </div>
 
-                                <div>
+                                <div style={{marginLeft:'15px'}}>
                                     <div style={{fontSize:'15px',fontWeight:'600',margin:'10px 0 5px'}}>
                                         <div>Purwadhika, Digital Technology School (January 2020 - July 2020)</div>
                                         {/* <div>January 2020 - July 2020</div> */}
@@ -586,7 +604,7 @@ class CurriculumVitae extends Component {
                                 // maxWidth:'570px',
                                 }}>
                                 <h1 style={{fontWeight:'400',letterSpacing:'3px'}}>Experience</h1>
-                                <Grid style={{border:'0px solid red'}}>
+                                <Grid style={{border:'0px solid red', marginLeft:'6px'}}>
                                     <Grid.Row>
                                         <Grid.Column width={3}>
                                             <div style={{
@@ -595,7 +613,7 @@ class CurriculumVitae extends Component {
                                                 fontWeight:'500',
                                                 color:'rgba(0,0,0,.7)',
                                                 fontFamily:'Montserrat',
-                                                minWidth:'50px',
+                                                minWidth:this.state.pdf?'0':'50px',
                                                 // padding:'0 0 0 20px',
                                                 // border:'4px solid rgba(0,0,0,.3)', 
                                                 // borderTop:'0px',
@@ -643,9 +661,9 @@ class CurriculumVitae extends Component {
                                                         left:'-0px',
                                                         transform:'translate(-50%,-50%)'
                                                     }}></span>
-                                                    2018
+                                                    2019
                                                 </div>
-                                                <div style={{
+                                                {/* <div style={{
                                                     position:'relative',
                                                     padding:this.state.isMobile?'0 0 0 10px':'0 0 0 20px',
                                                     marginTop:this.state.isMobile?'130px':'93px'
@@ -662,10 +680,10 @@ class CurriculumVitae extends Component {
                                                         transform:'translate(-50%,-50%)'
                                                     }}></span>
                                                     2016
-                                                </div>
+                                                </div> */}
                                             </div>
                                         </Grid.Column>
-                                        <Grid.Column width={13} style={{height:this.state.pdf?'200px':'auto',border:'0px solid yellow'}}>
+                                        <Grid.Column width={13} style={{height:this.state.pdf?'auto':'auto',border:'0px solid yellow'}}>
                                             <div style={{
                                                 marginBottom:'10px',
                                                 height:isDesktop?'auto':this.state.isTablet?'82.33px':'121px'
@@ -674,11 +692,11 @@ class CurriculumVitae extends Component {
                                                 <div style={{color:'rgba(0,0,0,.4)',fontWeight:'500',marginBottom:'5px'}}>Hawila Berkat Anugrah Ltd</div>
                                                 <div>Designed a static company website as part of villa rental in Bali, deployed with Google Cloud Platform</div>
                                             </div>
-                                            <div>
+                                            {/* <div>
                                                 <div style={{fontSize:'15px',fontWeight:'600'}}>Operational</div>
                                                 <div style={{color:'rgba(0,0,0,.4)',fontWeight:'500',marginBottom:'5px'}}>Hawila Berkat Anugrah Ltd</div>
                                                 <div>Managed workers for construction work in residence area, including to get involved with local organization regarding the project</div>
-                                            </div>
+                                            </div> */}
                                         </Grid.Column>
                                     </Grid.Row>
                                 </Grid>
@@ -686,7 +704,7 @@ class CurriculumVitae extends Component {
 
                             <div style={{position:'relative'}}>
                                 <h1 style={{fontWeight:'400',letterSpacing:'3px'}}>Volunteer Experience</h1>
-                                <Grid>
+                                <Grid style={{marginLeft:'6px'}}>
                                     <Grid.Row>
                                     <Grid.Column width={3}>
                                             <div style={{
