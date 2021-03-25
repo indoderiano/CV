@@ -91,7 +91,6 @@ class CurriculumVitae extends Component {
                 <Grid style={{
                     width: isDesktop?`${this.state.paperWidth}px`:'100%',
                     height: isDesktop?`${this.state.paperHeight}px`:'auto',
-                    // width: `${this.state.paperWidth}px`,
                     margin:'auto',
                     padding: '0',
                     // backgroundColor:'rgba(0,0,0,.1)'
@@ -176,14 +175,80 @@ class CurriculumVitae extends Component {
                                             </Header>
                                             : null
                                         }
-                                        <div><span style={{fontWeight:'500',marginRight:'auto'}}>Gender :</span> <span style={{float:'right',fontWeight:'300'}}>Male</span></div>
-                                        <div><span style={{fontWeight:'500',marginRight:'auto'}}>Nationality :</span> <span style={{float:'right',fontWeight:'300'}}>Indonesia</span></div>
+
+                                        {/* Hacktiv8 Career Development */}
+                                        {/* this part is not needed */}
+                                        {/* <div><span style={{fontWeight:'500',marginRight:'auto'}}>Gender :</span> <span style={{float:'right',fontWeight:'300'}}>Male</span></div> */}
+                                        {/* <div><span style={{fontWeight:'500',marginRight:'auto'}}>Nationality :</span> <span style={{float:'right',fontWeight:'300'}}>Indonesia</span></div> */}
                                         {/* <div><span style={{fontWeight:'500',marginRight:'auto'}}>Ethnicity :</span> <span style={{float:'right',fontWeight:'300'}}>Chinese Indonesian</span></div> */}
-                                        <div><span style={{fontWeight:'500',marginRight:'auto'}}>Birth :</span> <span style={{float:'right',fontWeight:'300'}}>Jakarta, 12 October 1987</span></div>
+                                        {/* <div><span style={{fontWeight:'500',marginRight:'auto'}}>Birth :</span> <span style={{float:'right',fontWeight:'300'}}>Jakarta, 12 October 1987</span></div> */}
                                         
+
+
                                         {/* <div><span style={{fontWeight:'bold'}}>Email</span>: mde50526@gmail.com</div>
                                         <div><span style={{fontWeight:'bold'}}>Whatsapp</span>: +6281999041167</div> */}
                                     </div>
+                                </div>
+
+                                <div
+                                    style={{
+                                        fontSize: '15px',
+                                        marginBottom: '40px'
+                                    }}
+                                >
+                                    <div
+                                        style={{
+                                            marginBottom: '.5em'
+                                        }}
+                                    >
+                                        <Icon name='mail' style={{marginRight: '1.5em'}}/>
+                                        <span>
+                                            mde50526@gmail.com
+                                        </span>
+                                    </div>
+                                    <div
+                                        style={{
+                                            marginBottom: '.5em'
+                                        }}
+                                    >
+                                        <Icon name='phone' style={{marginRight: '1.5em'}}/>
+                                        <span >
+                                            +6281999041167
+                                        </span>
+                                    </div>
+                                    <div
+                                        style={{
+                                            marginBottom: '.5em'
+                                        }}
+                                    >
+                                        <Icon name='map marker alternate' style={{marginRight: '1.5em', verticalAlign: 'top'}}/>
+                                        <div style={{display: 'inline-block'}}><p>Kramat Pela,</p>Jakarta Selatan</div>
+                                    </div>
+                                    <div
+                                        style={{
+                                            marginBottom: '.5em',
+                                            display: 'flex',
+                                            flexDirection: 'row'
+                                        }}
+                                    >
+                                        <Icon name='linkedin' style={{marginRight: '1.8em'}}/>
+                                        <span style={{wordBreak: 'break-word', wordWrap: ''}}>
+                                            https://www.linkedin.com/in/indo-halim-8132971a5
+                                        </span>
+                                    </div>
+                                    <div
+                                        style={{
+                                            marginBottom: '.5em',
+                                            display: 'flex',
+                                            flexDirection: 'row'
+                                        }}
+                                    >
+                                        <Icon name='github' style={{marginRight: '1.6em'}}/>
+                                        <span style={{wordBreak: 'break-word', wordWrap: ''}}>
+                                            https://github.com/indoderiano
+                                        </span>
+                                    </div>
+
                                 </div>
 
                                 {
@@ -294,15 +359,16 @@ class CurriculumVitae extends Component {
 
 
 
-
-                                <div style={{
+                                {/* Hacktiv8 Career Development */}
+                                {/* this part is not needed */}
+                                {/* <div style={{
                                     marginBottom:this.state.isMobile?'60px':'40px',
                                     // textAlign:!this.state.isMobile?'left':'center'
                                 }}>
                                     <Header as={'h4'} style={{color:'white'}}>Language</Header>
                                     <div><Icon name="circle" style={{fontSize:'8px',verticalAlign:'2px'}}></Icon>Bahasa Indonesia</div>
                                     <div><Icon name="circle" style={{fontSize:'8px',verticalAlign:'2px'}}></Icon>English: Conversational </div>
-                                </div>
+                                </div> */}
 
 
                                 {/* <div style={{marginBottom:'40px'}}>
@@ -311,31 +377,40 @@ class CurriculumVitae extends Component {
                                 </div> */}
 
 
-                                <div style={{
+                                {/* <div style={{
                                     marginBottom:this.state.isMobile?'60px':'40px',
                                     width:this.state.isMobile?'80%':'100%',
                                     display:this.state.isMobile?'inline-block':'block'
-                                    // textAlign:!this.state.isMobile?'left':'center'
                                     }}>
-                                    <Header as={'h4'} style={{color:'white'}}>Skills</Header>
+
+                                    <Header as={'h4'} style={{color:'white'}}>Front End Skills</Header>
+
                                     <Label style={style.skillLabel}>HTML/CSS</Label>
-                                    {/* <Label style={style.skillLabel}>Responsive Design</Label> */}
                                     <Label style={style.skillLabel}>Javascript</Label>
                                     <Label style={style.skillLabel}>React JS</Label>
                                     <Label style={style.skillLabel}>Vue JS</Label>
                                     <Label style={style.skillLabel}>React Native</Label>
+
+                                    <Header as={'h4'} style={{color:'white', marginTop: '20px'}}>Back End Skills</Header>
                                     <Label style={style.skillLabel}>Node JS/Express</Label>
                                     <Label style={style.skillLabel}>My Sql</Label>
+                                    <Label style={style.skillLabel}>Postgre Sql</Label>
+                                    <Label style={style.skillLabel}>Sequelize</Label>
+                                    <Label style={style.skillLabel}>Redis</Label>
+                                    <Label style={style.skillLabel}>Socket IO</Label>
+                                    <Label style={style.skillLabel}>Apollo GraphQL</Label>
+
+                                    <Header as={'h4'} style={{color:'white', marginTop: '20px'}}>Other Skills</Header>
                                     <Label style={style.skillLabel}>Git</Label>
-                                    {/* <Label style={style.skillLabel}>"Debugging"</Label> */}
-                                </div>
+                                    <Label style={style.skillLabel}>Google Auth</Label>
+                                </div> */}
 
                                 <div style={{
                                     marginBottom:this.state.isMobile?'60px':'40px',
                                     // width:this.state.isMobile?'70%':'100%',
                                     // display:this.state.isMobile?'inline-block':'block'
                                 }}>
-                                    <Header as={'h4'} style={{color:'white',margin:'0'}}>Portfolios</Header>
+                                    <Header as={'h2'} style={{color:'white',margin:'0 0 5px'}}>Portfolios</Header>
                                     {/* <Message size='tiny'>Due to sleep mode on the host, the sites will take a moment before showing</Message> */}
                                     <List 
                                         divided 
@@ -345,7 +420,8 @@ class CurriculumVitae extends Component {
                                         style={{
                                             fontSize:'14px',
                                             display:this.state.isMobile?'inline-block':'block',
-                                            textAlign:'left'
+                                            textAlign:'left',
+                                            margin: '0'
                                         }}
                                     >
                                         {/* {
@@ -360,7 +436,108 @@ class CurriculumVitae extends Component {
                                             </List.Item>
                                             : null
                                         } */}
-                                        <List.Item 
+
+                                        <List.Item
+                                            style={{
+                                                padding: '.6em 0',
+                                                borderBottom: '1px solid white',
+                                            }}
+                                        >
+                                            <Header>Popstore</Header>
+                                            <p
+                                                style={{margin: '.5em 0'}}
+                                            >E-commerce Web App with different type of users, visit website for more info</p>
+                                            <a
+                                                href='https://popstore-indo.herokuapp.com/' 
+                                                target="_blank"
+                                            >popstore-indo.herokuapp.com</a>
+                                            <div style={{marginTop: '.5em'}}>
+                                                <Label style={style.skillLabelMini}>React JS</Label>
+                                                <Label style={style.skillLabelMini}>Node JS</Label>
+                                                <Label style={style.skillLabelMini}>Express</Label>
+                                                <Label style={style.skillLabelMini}>Nodemailer</Label>
+                                                <Label style={style.skillLabelMini}>Mysql</Label>
+                                                <Label style={style.skillLabelMini}>Cloudinary</Label>
+                                            </div>
+                                        </List.Item>
+
+                                        <List.Item
+                                            style={{
+                                                padding: '.6em 0',
+                                                borderBottom: '1px solid white',
+                                                marginTop: '.2em',
+                                                borderTop: '1px solid white',
+                                            }}
+                                        >
+                                            <Header>Kanban</Header>
+                                            <p
+                                                style={{margin: '.5em 0'}}
+                                            >Kanban app, with cool feature, drag and drop by vue</p>
+                                            <a
+                                                style={{whiteSpace: 'nowrap'}}
+                                                href='https://kanban-project-hacktiv8.web.app/' 
+                                                target="_blank"
+                                            >kanban-project-hacktiv8.web.app</a>
+                                            <div style={{marginTop: '.5em'}}>
+                                                <Label style={style.skillLabelMini}>Vue JS</Label>
+                                                <Label style={style.skillLabelMini}>Node JS</Label>
+                                                <Label style={style.skillLabelMini}>Express</Label>
+                                                <Label style={style.skillLabelMini}>Google Sign In</Label>
+                                                <Label style={style.skillLabelMini}>Socket IO</Label>
+                                            </div>
+                                        </List.Item>
+
+                                        <List.Item
+                                            style={{
+                                                padding: '.6em 0',
+                                                borderBottom: '1px solid white',
+                                                marginTop: '.2em',
+                                                borderTop: '1px solid white',
+                                            }}
+                                        >
+                                            <Header>Jamboore</Header>
+                                            <p
+                                                style={{margin: '.5em 0'}}
+                                            >A simple ecommerce store built in Android App. Visit my personal website for more info</p>
+                                            <a
+                                                style={{whiteSpace: 'nowrap'}}
+                                                href='https://indo-halim.web.app/' 
+                                                target="_blank"
+                                            >indo-halim.web.app</a>
+                                            <div style={{marginTop: '.5em'}}>
+                                                <Label style={style.skillLabelMini}>React Native</Label>
+                                                <Label style={style.skillLabelMini}>Node JS</Label>
+                                                <Label style={style.skillLabelMini}>Express</Label>
+                                            </div>
+                                        </List.Item>
+
+                                        <List.Item
+                                            style={{
+                                                padding: '1em 0',
+                                                marginTop: '1em',
+                                                marginTop: '.2em',
+                                                borderTop: '1px solid white',
+                                            }}
+                                        >
+                                            {/* <Header>Jamboore</Header> */}
+                                            <p
+                                                style={{marginBottom: '.5em'}}
+                                            >More portfolios on my personal website</p>
+                                            <div
+                                                style={{marginTop: '1em'}}
+                                            >
+                                                <Icon name='hand point right outline'/>
+                                                <a
+                                                    style={{whiteSpace: 'nowrap', float: 'right'}}
+                                                    href='https://indo-halim.web.app/' 
+                                                    target="_blank"
+                                                >indo-halim.web.app</a>
+
+                                            </div>
+                                        </List.Item>
+
+
+                                        {/* <List.Item 
                                             as={'a'} 
                                             href='https://popstore-indo.herokuapp.com/' 
                                             target="_blank"
@@ -437,7 +614,7 @@ class CurriculumVitae extends Component {
                                                 :
                                                 'Jamboree (android app via github)'
                                             }
-                                        </List.Item>
+                                        </List.Item> */}
                                     </List>
                                 </div>
 
@@ -455,20 +632,71 @@ class CurriculumVitae extends Component {
                                 // backgroundColor:'rgba(0,0,0,.1)',
                                 backgroundColor:'rgba(230,230,230,1)',
                                 width:isDesktop?`${this.state.paperWidth-300}px`:'100%',
-                                padding:this.state.isMobile?'40px 20px 60px':'40px 60px 60px 40px',
+                                padding:this.state.isMobile?'40px 20px 60px':'20px 30px 30px 40px',
                                 color:'rgba(0,0,0,.8)'
                             }}
                         >
                             
                             <div style={{
                                 display:isDesktop?'block':'none',
-                                margin:this.state.pdf?'20px 0 40px':'30px 0',
+                                margin:this.state.pdf?'10px 0 20px':'30px 0',
                                 border:'0px solid black'
                                 }}>
-                                <Header as={'h1'} style={{fontSize:'51px',fontWeight:'300',marginBottom:'40px'}}>Indo Halim</Header>
+                                <Header as={'h1'} style={{fontSize:'51px',fontWeight:'300', margin: '0 0 0 -5px'}}>Indo Halim</Header>
+                                <Header as={'h4'}
+                                    style={{
+                                        margin:'0 0 20px',
+                                        color: 'rgba(0,0,0,.7)',
+                                        fontWeight: '400',
+                                        fontSize: '18px'
+                                    }}>Web Fullstack Developer</Header>
+
+                                <div
+                                    style={{
+                                        border:'2px solid rgba(0,0,0,.5)',
+                                        borderTop:'0',
+                                        borderLeft:'0',
+                                        borderRight:'0',
+                                        paddingBottom: '15px',
+                                        marginBottom: '3px',
+
+                                        display: 'flex',
+                                        flexDirection: 'row',
+
+                                    }}
+                                >
+                                    <Grid>
+                                        <Grid.Column width={6}>
+                                            <Header as={'h4'} style={{color:'rgba(0,0,0,.7)'}}>Front End Skills</Header>
+
+                                            <Label style={style.skillLabel} color='blue'>HTML/CSS</Label>
+                                            <Label style={style.skillLabel} color='blue'>Javascript</Label>
+                                            <Label style={style.skillLabel} color='blue'>React JS</Label>
+                                            <Label style={style.skillLabel} color='blue'>Vue JS</Label>
+                                            <Label style={style.skillLabel} color='blue'>React Native</Label>
+                                        </Grid.Column>
+                                        <Grid.Column width={6}>
+                                            <Header as={'h4'} style={{color:'rgba(0,0,0,.7)'}}>Back End Skills</Header>
+                                            <Label style={style.skillLabel} color='blue'>Node JS/Express</Label>
+                                            <Label style={style.skillLabel} color='blue'>My Sql</Label>
+                                            <Label style={style.skillLabel} color='blue'>Postgre Sql</Label>
+                                            <Label style={style.skillLabel} color='blue'>Sequelize</Label>
+                                            <Label style={style.skillLabel} color='blue'>Redis</Label>
+                                            <Label style={style.skillLabel} color='blue'>Socket IO</Label>
+                                            <Label style={style.skillLabel} color='blue'>Apollo GraphQL</Label>
+                                        </Grid.Column>
+                                        <Grid.Column width={4}>
+                                            <Header as={'h4'} style={{color:'rgba(0,0,0,.7)'}}>Other Skills</Header>
+                                            <Label style={style.skillLabel} color='blue'>Git</Label>
+                                            <Label style={style.skillLabel} color='blue'>Google Auth</Label>
+                                            <Label style={style.skillLabel} color='blue'>Cloudinary</Label>
+                                        </Grid.Column>
+                                    </Grid>
 
 
-                                <div style={{
+                                </div>
+
+                                {/* <div style={{
                                     display:'inline-block',
                                     paddingBottom:'15px',
                                     border:'2px solid rgba(0,0,0,.5)',
@@ -528,12 +756,45 @@ class CurriculumVitae extends Component {
                                             borderBottom:'0',
                                             // padding:'28px 14px',
                                             paddingRight:'50px',
-                                            maxWidth:'170px'
+                                            maxWidth:'170px',
+                                            marginBottom: '10px'
                                     }}>
                                         <Icon name='map marker alternate' style={{marginBottom:'5px',fontSize:'18px'}}/>
                                         <div style={{textAlign:'center'}}><p>Gandaria,</p>Jakarta Selatan</div>
                                     </div>
-                                </div>
+                                    <div 
+                                        style={{
+                                            float:'left',
+                                            // border:'1px solid gray',
+                                            textAlign:'center',
+                                            borderLeft: '0',
+                                            borderTop:'0',
+                                            borderBottom:'0',
+                                            // padding:'28px 14px',
+                                            paddingRight:'50px',
+                                            maxWidth:'170px',
+                                            wordWrap: 'break-word'
+                                    }}>
+                                        <Icon name='map marker alternate' style={{marginBottom:'5px',fontSize:'18px'}}/>
+                                        <div style={{textAlign:'center'}}><p>https://www.linkedin.com/in/indo-halim-8132971a5/</p></div>
+                                    </div>
+                                    <div 
+                                        style={{
+                                            float:'left',
+                                            // border:'1px solid gray',
+                                            textAlign:'center',
+                                            borderLeft: '0',
+                                            borderTop:'0',
+                                            borderBottom:'0',
+                                            // padding:'28px 14px',
+                                            paddingRight:'50px',
+                                            maxWidth:'170px',
+                                            wordWrap: 'break-word'
+                                    }}>
+                                        <Icon name='map marker alternate' style={{marginBottom:'5px',fontSize:'18px'}}/>
+                                        <div style={{textAlign:'center'}}><p>https://github.com/indoderiano</p></div>
+                                    </div>
+                                </div> */}
 
                                 <div style={{
                                     width:'100%',
@@ -556,20 +817,21 @@ class CurriculumVitae extends Component {
 
                             <div style={{marginBottom:'30px',border:'0px solid black'}}>
                                 <h1 style={{fontWeight:'400',letterSpacing:'3px',marginBottom:'.4em'}}>Education</h1>
-                                <div style={{marginLeft:'15px'}}>
-                                    {/* <div>2006 - 2009</div> */}
-                                    <div style={{fontSize:'15px',fontWeight:'600',marginBottom:'5px'}}>King's College, University of London (2006 - 2009)</div>
-                                    <div style={{fontSize:'15px',fontWeight:'400'}}>Bachelor of Engineering </div>
-                                    <div>Electronic & engineering</div>
-                                    <div>Grade: upper second class degree (or equal to GPA 3.3<span style={{fontSize:'12px',verticalAlign:'2px'}}>+</span>)</div>
+                                <div style={{marginLeft:'15px', marginBottom: '15px'}}>
+                                    <div style={{fontSize:'15px',fontWeight:'600',margin:'10px 0 5px'}}>
+                                        <div>Hacktiv8 (November 2020 - March 2021)</div>
+                                        
+                                    </div>
+                                    <div style={{fontSize:'15px',fontWeight:'400'}}>Fullstack Web Development Javascript</div>
+                                    {/* <div>Electronic & engineering</div> */}
+                                    {/* <div>Grade: <span style={{fontWeight:'700',marginLeft:'.3em'}}>94</span></div> */}
 
                                 </div>
-
-                                <div style={{marginLeft:'15px'}}>
+                                <div style={{marginLeft:'15px', marginBottom: '15px'}}>
                                     <div style={{fontSize:'15px',fontWeight:'600',margin:'10px 0 5px'}}>
                                         <div>Purwadhika, Digital Technology School (January 2020 - July 2020)</div>
                                         {/* <div>January 2020 - July 2020</div> */}
-                                        <a 
+                                        {/* <a 
                                             href='https://www.purwadhika.com/job-connector-web-mobile-development' 
                                             target="_blank"
                                             style={{
@@ -588,13 +850,22 @@ class CurriculumVitae extends Component {
                                                 <Icon name='angle double right' style={{verticalAlign:'-1px'}}/>
                                                 : null
                                             }
-                                        </a>
+                                        </a> */}
                                     </div>
                                     <div style={{fontSize:'15px',fontWeight:'400'}}>Web And Mobile Development Course</div>
                                     {/* <div>Electronic & engineering</div> */}
                                     <div>Grade: <span style={{fontWeight:'700',marginLeft:'.3em'}}>94</span></div>
 
                                 </div>
+                                <div style={{marginLeft:'15px', marginTop: '10px'}}>
+                                    {/* <div>2006 - 2009</div> */}
+                                    <div style={{fontSize:'15px',fontWeight:'600',marginBottom:'5px'}}>King's College, University of London (2006 - 2009)</div>
+                                    <div style={{fontSize:'15px',fontWeight:'400'}}>Bachelor of Engineering </div>
+                                    <div>Electronic & engineering</div>
+                                    <div>Grade: upper second class degree (or equal to GPA 3.3<span style={{fontSize:'12px',verticalAlign:'2px'}}>+</span>)</div>
+
+                                </div>
+
                             </div>
 
                             <div style={{
@@ -643,12 +914,59 @@ class CurriculumVitae extends Component {
                                                         left:'-0px',
                                                         transform:'translate(-50%,-50%)'
                                                     }}></span>
-                                                    2020
+                                                    2020 <p style={{fontSize: '12px'}}>September</p>
                                                 </div>
                                                 <div style={{
                                                     position:'relative',
                                                     padding:this.state.isMobile?'0 0 0 10px':'0 0 0 20px',
-                                                    marginTop:this.state.isMobile?'98px':'60px',
+                                                    marginTop:'50px'
+                                                }}>
+                                                    <span style={{
+                                                        background:'rgba(110,110,110,1)',
+                                                        width:'10px',
+                                                        height:'10px',
+                                                        borderRadius:'10px',
+                                                        display:'inline-block',
+                                                        position:'absolute',
+                                                        top:'50%',
+                                                        left:'-0px',
+                                                        transform:'translate(-50%,-50%)'
+                                                    }}></span>
+                                                    2020 <p style={{fontSize: '12px'}}>August</p>
+                                                </div>
+
+                                                <div style={{
+                                                    position:'relative',
+                                                    padding:this.state.isMobile?'0 0 0 10px':'0 0 0 20px',
+                                                    marginTop:'11.5px'
+                                                }}>
+                                                    <p style={{color: 'rgba(0,0,0,.4)', fontWeight: '400'}}>-----------</p>
+                                                    <p style={{color: 'rgba(0,0,0,.4)', fontWeight: '400', marginTop: '18.5px'}}>-----------</p>
+                                                </div>
+                                                
+                                                <div style={{
+                                                    position:'relative',
+                                                    padding:this.state.isMobile?'0 0 0 10px':'0 0 0 20px',
+                                                    marginTop:this.state.isMobile?'98px':'15px',
+                                                    }}>
+                                                    <span style={{
+                                                        background:'rgba(110,110,110,1)',
+                                                        width:'10px',
+                                                        height:'10px',
+                                                        borderRadius:'10px',
+                                                        display:'inline-block',
+                                                        position:'absolute',
+                                                        top:'50%',
+                                                        left:'-0px',
+                                                        transform:'translate(-50%,-50%)'
+                                                    }}></span>
+                                                    2020
+                                                    <p style={{fontSize: '12px'}}>January</p>
+                                                </div>
+                                                <div style={{
+                                                    position:'relative',
+                                                    padding:this.state.isMobile?'0 0 0 10px':'0 0 0 20px',
+                                                    marginTop:this.state.isMobile?'98px':'45px',
                                                     }}>
                                                     <span style={{
                                                         background:'rgba(110,110,110,1)',
@@ -662,6 +980,7 @@ class CurriculumVitae extends Component {
                                                         transform:'translate(-50%,-50%)'
                                                     }}></span>
                                                     2019
+                                                    <p style={{fontSize: '12px'}}>January</p>
                                                 </div>
                                                 {/* <div style={{
                                                     position:'relative',
@@ -685,6 +1004,37 @@ class CurriculumVitae extends Component {
                                         </Grid.Column>
                                         <Grid.Column width={13} style={{height:this.state.pdf?'auto':'auto',border:'0px solid yellow'}}>
                                             <div style={{
+                                                marginBottom:'15px',
+                                                height:isDesktop?'auto':this.state.isTablet?'82.33px':'121px'
+                                                }}>
+                                                <div style={{fontSize:'15px',fontWeight:'600'}}>Freelancer</div>
+                                                <div style={{color:'rgba(0,0,0,.4)',fontWeight:'500',marginBottom:'5px'}}>Yourpay Indonesia</div>
+                                                <div style={{marginBottom: '.5em'}}>Improved website application as part of company's internal application system</div>
+                                                <Label style={style.skillLabel} color='blue'>Vue JS</Label>
+                                            </div>
+
+                                            <div style={{marginBottom: '15px', color:'rgba(0,0,0,.4)'}}>
+                                                <p style={{marginBottom: '0'}}>-------------------------------------------------------------------------------</p>
+                                                <p style={{marginBottom: '0'}}>Purwadhika, Fullstack Web Development Course</p>
+                                                <p style={{marginBottom: '0'}}>-------------------------------------------------------------------------------</p>
+                                            </div>
+
+
+                                            <div style={{
+                                                marginBottom:'10px',
+                                                height:isDesktop?'auto':this.state.isTablet?'82.33px':'121px'
+                                                }}>
+                                                <div style={{fontSize:'15px',fontWeight:'600'}}>Web Designer</div>
+                                                {/* <div style={{color:'rgba(0,0,0,.4)',fontWeight:'500',marginBottom:'5px'}}>Hawila Berkat Anugrah Ltd</div> */}
+                                                <div
+                                                    style={{marginBottom: '.5em'}}
+                                                >Created and design static websites for several business development in Bali, while working online in freelancer.com also as web designer</div>
+                                                <Label style={style.skillLabel} color='blue'>HTML/CSS</Label>
+                                                <Label style={style.skillLabel} color='blue'>Javascript</Label>
+                                                <Label style={style.skillLabel} color='blue'>Google Cloud Platform</Label>
+                                            </div>
+
+                                            {/* <div style={{
                                                 marginBottom:'10px',
                                                 height:isDesktop?'auto':this.state.isTablet?'82.33px':'121px'
                                                 }}>
@@ -692,17 +1042,28 @@ class CurriculumVitae extends Component {
                                                 <div style={{color:'rgba(0,0,0,.4)',fontWeight:'500',marginBottom:'5px'}}>Hawila Berkat Anugrah Ltd</div>
                                                 <div>Designed a static company website as part of villa rental in Bali, deployed with Google Cloud Platform</div>
                                             </div>
-                                            {/* <div>
-                                                <div style={{fontSize:'15px',fontWeight:'600'}}>Operational</div>
-                                                <div style={{color:'rgba(0,0,0,.4)',fontWeight:'500',marginBottom:'5px'}}>Hawila Berkat Anugrah Ltd</div>
-                                                <div>Managed workers for construction work in residence area, including to get involved with local organization regarding the project</div>
+                                            <div style={{
+                                                marginBottom:'10px',
+                                                height:isDesktop?'auto':this.state.isTablet?'82.33px':'121px'
+                                                }}>
+                                                <div style={{fontSize:'15px',fontWeight:'600'}}>Web Designer (as freelancer)</div>
+                                                <div style={{color:'rgba(0,0,0,.4)',fontWeight:'500',marginBottom:'5px'}}>via Freelancer.com</div>
+                                                <div>Worked on online projects, improved user experience and web layout</div>
+                                            </div>
+                                            <div style={{
+                                                marginBottom:'10px',
+                                                height:this.state.isMobile?'101px':'auto'
+                                                }}>
+                                                <div style={{fontSize:'15px',fontWeight:'600'}}>Web Designer</div>
+                                                <div style={{color:'rgba(0,0,0,.4)',fontWeight:'500',marginBottom:'5px'}}>Active Football Academy</div>
+                                                <div>Developed a static web for a small business of football training programs for children</div>
                                             </div> */}
                                         </Grid.Column>
                                     </Grid.Row>
                                 </Grid>
                             </div>
 
-                            <div style={{position:'relative'}}>
+                            {/* <div style={{position:'relative'}}>
                                 <h1 style={{fontWeight:'400',letterSpacing:'3px'}}>Volunteer Experience</h1>
                                 <Grid style={{marginLeft:'6px'}}>
                                     <Grid.Row>
@@ -759,20 +1120,6 @@ class CurriculumVitae extends Component {
                                                     }}></span>
                                                     2018
                                                 </div>
-                                                {/* <div style={{position:'relative',padding:'0 0 0 20px',marginTop:'60px'}}>
-                                                    <span style={{
-                                                        background:'rgba(110,110,110,1)',
-                                                        width:'10px',
-                                                        height:'10px',
-                                                        borderRadius:'10px',
-                                                        display:'inline-block',
-                                                        position:'absolute',
-                                                        top:'50%',
-                                                        left:'-0px',
-                                                        transform:'translate(-50%,-50%)'
-                                                    }}></span>
-                                                    2016
-                                                </div> */}
                                             </div>
                                         </Grid.Column>
                                         <Grid.Column width={13} >
@@ -793,21 +1140,11 @@ class CurriculumVitae extends Component {
                                                 <div style={{color:'rgba(0,0,0,.4)',fontWeight:'500',marginBottom:'5px'}}>Active Football Academy</div>
                                                 <div>Developed a static web for a small business of football training programs for children</div>
                                             </div>
-                                            {/* <div style={{marginBottom:'10px'}}>
-                                                <div style={{fontSize:'15px',fontWeight:'600'}}>Coach Assistant</div>
-                                                <div style={{color:'rgba(0,0,0,.6)',marginBottom:'5px'}}>Active Football Academy</div>
-                                                <div>Assisted children age of between 6 to 16 years old using movement drills for their trainings</div>
-                                            </div>
-                                            <div>
-                                                <div style={{fontSize:'15px',fontWeight:'600'}}>Asian Games 2018 Volunteer</div>
-                                                <div style={{color:'rgba(0,0,0,.6)',marginBottom:'5px'}}>Inasgoc</div>
-                                                <div>Assisted athletes, officials, and spectators from many countries</div>
-                                            </div> */}
                                             
                                         </Grid.Column>
                                     </Grid.Row>
                                 </Grid>
-                            </div>
+                            </div> */}
                         
                         </Grid.Column>
                     </Grid.Row>
@@ -823,6 +1160,10 @@ const style={
         margin:'0 .3em .3em 0',
 
     },
+    skillLabelMini: {
+        margin:'0 .3em .3em 0',
+        fontSize: '10px'
+    }
 }
  
 export default CurriculumVitae;
