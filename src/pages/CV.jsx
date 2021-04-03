@@ -47,6 +47,68 @@ class CurriculumVitae extends Component {
             this.setState({isMobile:true,isTablet:false})
         }
     }
+
+    renderTarget = () => {
+        return (
+            <span style={{
+                border: '2px solid rgba(110,110,110,1)',
+                backgroundColor: 'rgba(230,230,230,1)',
+                // background:'rgba(110,110,110,1)',
+                width:'10px',
+                height:'10px',
+                // borderRadius:'10px',
+                display:'inline-block',
+                position:'absolute',
+                top:'50%',
+                left:'-0px',
+                transform:'translate(-50%,-50%) rotate(45deg)'
+            }}>
+                <span
+                    style={{
+                        position: 'absolute',
+                        top: '50%',
+                        left: '50%',
+                        transform: 'translate(-50%,-50%)',
+                        width: '4px',
+                        height: '4px',
+                        backgroundColor: 'rgb(110,110,110)',
+                        // borderRadius: '10px',
+                        // overflow: 'hidden'
+                    }}
+                />
+            </span>
+        )
+
+        return (
+            <span style={{
+                // border: '2px solid rgba(110,110,110,1)',
+                // backgroundColor: 'rgba(230,230,230,1)',
+                background:'rgba(110,110,110,1)',
+                width:'10px',
+                height:'10px',
+                borderRadius:'10px',
+                display:'inline-block',
+                position:'absolute',
+                top:'50%',
+                left:'-0px',
+                transform:'translate(-50%,-50%)'
+            }}>
+                {/* <span
+                    style={{
+                        position: 'absolute',
+                        top: 'calc( 50% + 0px )',
+                        left: 'calc( 50% + 0px )',
+                        transform: 'translate(-50%,-50%)',
+                        width: '5px',
+                        height: '5px',
+                        backgroundColor: 'rgb(110,110,110)',
+                        borderRadius: '10px',
+                        overflow: 'hidden'
+                    }}
+                /> */}
+            </span>
+        )
+    }
     
 
     render() { 
@@ -111,7 +173,7 @@ class CurriculumVitae extends Component {
                             }}
                         >
                             <div style={{
-                                padding:this.state.isMobile?'50px 0 20px':'50px 20px 20px',
+                                padding:this.state.isMobile?'50px 0 20px':'30px 20px 20px',
                                 textAlign:isDesktop?'left':this.state.isTablet?'left':'center',
                                 color:'white',
                                 fontWeight:'300',
@@ -127,22 +189,26 @@ class CurriculumVitae extends Component {
                                     <div style={{
                                         textAlign:'center',
                                         width:isDesktop?'100%':this.state.isTablet?'250px':'100%',
+                                        paddingTop: '100%',
+                                        position: 'relative',
                                         display:'inline-block',
-                                        margin:'auto'
+                                        margin:'auto',
+                                        borderRadius: '150px',
+                                        overflow: 'hidden'
                                         // margin:isDesktop?'0':'0 2em'
                                     }}>
                                         <Image 
                                             // src='https://react.semantic-ui.com/images/wireframe/image.png' 
-                                            src='/profile-pic.jpg'
+                                            src='/profile-pic-2.jpg'
                                             // size='small' 
                                             style={{
                                                 display:'inline-block',
-                                                // marginBottom:'30px',
-                                                // marginRight:isDesktop?'0':'5em',
-                                                // margin:isDesktop?'auto':'',
-                                                width:this.state.isMobile?'150px':'200px',
-                                                height:this.state.isMobile?'150px':'200px',
-                                                borderRadius:'100px'
+                                                width:this.state.isMobile?'150px':'100%',
+                                                // height:this.state.isMobile?'150px':'271.25636px',
+                                                // height:this.state.isMobile?'150px':'200px',
+                                                position: 'absolute',
+                                                top: '-15px',
+                                                left: '0'
                                             }}
                                             
                                         />
@@ -633,27 +699,146 @@ class CurriculumVitae extends Component {
                                 backgroundColor:'rgba(230,230,230,1)',
                                 width:isDesktop?`${this.state.paperWidth-300}px`:'100%',
                                 padding:this.state.isMobile?'40px 20px 60px':'20px 30px 30px 40px',
-                                color:'rgba(0,0,0,.8)'
+                                color:'rgba(0,0,0,.8)',
+                                position: 'relative',
                             }}
                         >
+
+                            {/* <div
+                                style={{
+                                    position: 'absolute',
+                                    top: '40%',
+                                    left: '70%',
+                                    width: '60%',
+                                    paddingTop: '60%',
+                                    // height: '30%',
+                                    // backgroundColor: 'rgba(0,0,0,.07)',
+                                    border: '10px solid rgba(0,0,0,.07)',
+                                    transform: 'rotate(45deg)',
+                                    transformOrigin: '50% 50%'
+                                }}
+                            /> */}
+
+                            {/* <div
+                                style={{
+                                    position: 'absolute',
+                                    top: '40%',
+                                    left: '80%',
+                                    width: '60%',
+                                    paddingTop: '60%',
+                                    // height: '30%',
+                                    backgroundColor: 'rgba(0,0,0,.07)',
+                                    border: '10px solid rgba(0,0,0,.0)',
+                                    transform: 'rotate(45deg)',
+                                    transformOrigin: '50% 50%'
+                                }}
+                            /> */}
+
+                            {/* <div
+                                style={{
+                                    position: 'absolute',
+                                    top: '40%',
+                                    left: '95%',
+                                    width: '60%',
+                                    paddingTop: '60%',
+                                    // height: '30%',
+                                    backgroundColor: 'rgba(0,0,0,.07)',
+                                    border: '10px solid rgba(0,0,0,.0)',
+                                    transform: 'rotate(45deg)',
+                                    transformOrigin: '50% 50%'
+                                }}
+                            /> */}
+
+                            {/* <div
+                                style={{
+                                    position: 'absolute',
+                                    top: '40%',
+                                    left: '110%',
+                                    width: '60%',
+                                    paddingTop: '60%',
+                                    // height: '30%',
+                                    backgroundColor: 'rgba(0,0,0,.07)',
+                                    border: '10px solid rgba(0,0,0,.0)',
+                                    transform: 'rotate(45deg)',
+                                    transformOrigin: '50% 50%'
+                                }}
+                            /> */}
+
+
+                            {/* <div
+                                style={{
+                                    position: 'absolute',
+                                    top: '-40%',
+                                    left: '30%',
+                                    width: '550%',
+                                    paddingTop: '550%',
+                                    // height: '30%',
+                                    backgroundColor: 'rgba(0,0,0,.07)',
+                                    borderRadius: '2000px',
+                                    overflow: 'hidden'
+                                }}
+                            /> */}
+
+                            {/* <div
+                                style={{
+                                    position: 'absolute',
+                                    top: '-30%',
+                                    left: '70%',
+                                    width: '550%',
+                                    paddingTop: '550%',
+                                    // height: '30%',
+                                    backgroundColor: 'rgba(0,0,0,.07)',
+                                    borderRadius: '2000px',
+                                    overflow: 'hidden'
+                                }}
+                            /> */}
+
+                            {/* <div
+                                style={{
+                                    position: 'absolute',
+                                    top: '-20%',
+                                    left: '70%',
+                                    width: '550%',
+                                    paddingTop: '550%',
+                                    // height: '30%',
+                                    backgroundColor: 'rgba(0,0,0,.07)',
+                                    borderRadius: '2000px',
+                                    overflow: 'hidden'
+                                }}
+                            /> */}
+
+                            {/* <div
+                                style={{
+                                    position: 'absolute',
+                                    top: '0%',
+                                    left: '0%',
+                                    width: '100%',
+                                    height: '100%',
+                                    backgroundImage: "url('https://semantic-ui.com/images/backgrounds/14.jpg')",
+                                    backgroundSize: 'cover',
+                                    overflow: 'hidden',
+                                    opacity: '.4'
+                                }}
+                            /> */}
+
                             
                             <div style={{
                                 display:isDesktop?'block':'none',
-                                margin:this.state.pdf?'10px 0 20px':'30px 0',
+                                margin:this.state.pdf?'0px 0 20px':'30px 0',
                                 border:'0px solid black'
                                 }}>
-                                <Header as={'h1'} style={{fontSize:'51px',fontWeight:'300', margin: '0 0 0 -5px'}}>Indo Halim</Header>
+                                <Header as={'h1'} style={{fontSize:'60px',fontWeight:'200', margin: '0 0 0 -5px'}}>Indo Halim</Header>
                                 <Header as={'h4'}
                                     style={{
                                         margin:'0 0 20px',
                                         color: 'rgba(0,0,0,.7)',
-                                        fontWeight: '400',
-                                        fontSize: '18px'
+                                        fontWeight: '300',
+                                        fontSize: '27px'
                                     }}>Web Fullstack Developer</Header>
 
                                 <div
                                     style={{
-                                        border:'2px solid rgba(0,0,0,.5)',
+                                        border:'1.5px solid rgba(0,0,0,.5)',
                                         borderTop:'0',
                                         borderLeft:'0',
                                         borderRight:'0',
@@ -669,27 +854,27 @@ class CurriculumVitae extends Component {
                                         <Grid.Column width={6}>
                                             <Header as={'h4'} style={{color:'rgba(0,0,0,.7)'}}>Front End Skills</Header>
 
-                                            <Label style={style.skillLabel} color='blue'>HTML/CSS</Label>
-                                            <Label style={style.skillLabel} color='blue'>Javascript</Label>
-                                            <Label style={style.skillLabel} color='blue'>React JS</Label>
-                                            <Label style={style.skillLabel} color='blue'>Vue JS</Label>
-                                            <Label style={style.skillLabel} color='blue'>React Native</Label>
+                                            <Label style={style.skillLabel}>HTML/CSS</Label>
+                                            <Label style={style.skillLabel}>Javascript</Label>
+                                            <Label style={style.skillLabel}>React JS</Label>
+                                            <Label style={style.skillLabel}>Vue JS</Label>
+                                            <Label style={style.skillLabel}>React Native</Label>
                                         </Grid.Column>
                                         <Grid.Column width={6}>
                                             <Header as={'h4'} style={{color:'rgba(0,0,0,.7)'}}>Back End Skills</Header>
-                                            <Label style={style.skillLabel} color='blue'>Node JS/Express</Label>
-                                            <Label style={style.skillLabel} color='blue'>My Sql</Label>
-                                            <Label style={style.skillLabel} color='blue'>Postgre Sql</Label>
-                                            <Label style={style.skillLabel} color='blue'>Sequelize</Label>
-                                            <Label style={style.skillLabel} color='blue'>Redis</Label>
-                                            <Label style={style.skillLabel} color='blue'>Socket IO</Label>
-                                            <Label style={style.skillLabel} color='blue'>Apollo GraphQL</Label>
+                                            <Label style={style.skillLabel}>Node JS/Express</Label>
+                                            <Label style={style.skillLabel}>My Sql</Label>
+                                            <Label style={style.skillLabel}>Postgre Sql</Label>
+                                            <Label style={style.skillLabel}>Sequelize</Label>
+                                            <Label style={style.skillLabel}>Redis</Label>
+                                            <Label style={style.skillLabel}>Socket IO</Label>
+                                            <Label style={style.skillLabel}>Apollo GraphQL</Label>
                                         </Grid.Column>
                                         <Grid.Column width={4}>
                                             <Header as={'h4'} style={{color:'rgba(0,0,0,.7)'}}>Other Skills</Header>
-                                            <Label style={style.skillLabel} color='blue'>Git</Label>
-                                            <Label style={style.skillLabel} color='blue'>Google Auth</Label>
-                                            <Label style={style.skillLabel} color='blue'>Cloudinary</Label>
+                                            <Label style={style.skillLabel}>Git</Label>
+                                            <Label style={style.skillLabel}>Google Auth</Label>
+                                            <Label style={style.skillLabel}>Cloudinary</Label>
                                         </Grid.Column>
                                     </Grid>
 
@@ -798,24 +983,23 @@ class CurriculumVitae extends Component {
 
                                 <div style={{
                                     width:'100%',
-                                    height:'2px',
+                                    height:'1.5px',
                                     background:'rgba(0,0,0,.5)',
                                     margin:'0px 0'
                                 }}/>
 
-                                
                                 {/* <div style={{fontSize:'18px',marginBottom:'5px'}}>Email: mde50526@gmail.com</div>
                                 <div style={{fontSize:'18px'}}>Whatsapp: +6281999041167</div> */}
                             </div>
 
-                            <div style={{marginBottom:'30px',border:'0px solid black'}}>
+                            <div style={{marginBottom:'20px',border:'0px solid black'}}>
                                 <h1 style={{fontWeight:'400',letterSpacing:'3px',marginBottom:'.4em'}}>About Me</h1>
                                 <div style={{fontSize:'15px', marginLeft:'15px'}}>
                                     Hello, as coding enthusiast, I have a lot of passion for solving problems using analytical and logical thinking because it teaches me how to think. Therefore, I am keen to pursue a career in programming to improve my way of thinking in order to be a better person individually and in community.
                                 </div>
                             </div>
 
-                            <div style={{marginBottom:'30px',border:'0px solid black'}}>
+                            <div style={{marginBottom:'20px',border:'0px solid black'}}>
                                 <h1 style={{fontWeight:'400',letterSpacing:'3px',marginBottom:'.4em'}}>Education</h1>
                                 <div style={{marginLeft:'15px', marginBottom: '15px'}}>
                                     <div style={{fontSize:'15px',fontWeight:'600',margin:'10px 0 5px'}}>
@@ -823,6 +1007,7 @@ class CurriculumVitae extends Component {
                                         
                                     </div>
                                     <div style={{fontSize:'15px',fontWeight:'400'}}>Fullstack Web Development Javascript</div>
+                                    <div>Grade: <span style={{fontWeight:'700',marginLeft:'.3em'}}>95%</span></div>
                                     {/* <div>Electronic & engineering</div> */}
                                     {/* <div>Grade: <span style={{fontWeight:'700',marginLeft:'.3em'}}>94</span></div> */}
 
@@ -854,7 +1039,7 @@ class CurriculumVitae extends Component {
                                     </div>
                                     <div style={{fontSize:'15px',fontWeight:'400'}}>Web And Mobile Development Course</div>
                                     {/* <div>Electronic & engineering</div> */}
-                                    <div>Grade: <span style={{fontWeight:'700',marginLeft:'.3em'}}>94</span></div>
+                                    <div>Grade: <span style={{fontWeight:'700',marginLeft:'.3em'}}>94%</span></div>
 
                                 </div>
                                 <div style={{marginLeft:'15px', marginTop: '10px'}}>
@@ -892,10 +1077,10 @@ class CurriculumVitae extends Component {
                                                 // borderRight:'0'
                                             }}>
                                                 <span style={{
-                                                    width:'4px',
+                                                    width:'1.4px',
                                                     height:'95%',
                                                     display:'inline-block',
-                                                    background:'rgba(0,0,0,.3)',
+                                                    background:'rgba(130,130,130,1)',
                                                     position:'absolute',
                                                     top:'5%',
                                                     left:'0px',
@@ -903,17 +1088,9 @@ class CurriculumVitae extends Component {
                                                 }}>
                                                 </span>
                                                 <div style={{position:'relative',padding:this.state.isMobile?'0 0 0 10px':'0 0 0 20px'}}>
-                                                    <span style={{
-                                                        background:'rgba(110,110,110,1)',
-                                                        width:'10px',
-                                                        height:'10px',
-                                                        borderRadius:'10px',
-                                                        display:'inline-block',
-                                                        position:'absolute',
-                                                        top:'50%',
-                                                        left:'-0px',
-                                                        transform:'translate(-50%,-50%)'
-                                                    }}></span>
+                                                    {
+                                                        this.renderTarget()
+                                                    }
                                                     2020 <p style={{fontSize: '12px'}}>September</p>
                                                 </div>
                                                 <div style={{
@@ -921,17 +1098,9 @@ class CurriculumVitae extends Component {
                                                     padding:this.state.isMobile?'0 0 0 10px':'0 0 0 20px',
                                                     marginTop:'50px'
                                                 }}>
-                                                    <span style={{
-                                                        background:'rgba(110,110,110,1)',
-                                                        width:'10px',
-                                                        height:'10px',
-                                                        borderRadius:'10px',
-                                                        display:'inline-block',
-                                                        position:'absolute',
-                                                        top:'50%',
-                                                        left:'-0px',
-                                                        transform:'translate(-50%,-50%)'
-                                                    }}></span>
+                                                    {
+                                                        this.renderTarget()
+                                                    }
                                                     2020 <p style={{fontSize: '12px'}}>August</p>
                                                 </div>
 
@@ -949,17 +1118,9 @@ class CurriculumVitae extends Component {
                                                     padding:this.state.isMobile?'0 0 0 10px':'0 0 0 20px',
                                                     marginTop:this.state.isMobile?'98px':'15px',
                                                     }}>
-                                                    <span style={{
-                                                        background:'rgba(110,110,110,1)',
-                                                        width:'10px',
-                                                        height:'10px',
-                                                        borderRadius:'10px',
-                                                        display:'inline-block',
-                                                        position:'absolute',
-                                                        top:'50%',
-                                                        left:'-0px',
-                                                        transform:'translate(-50%,-50%)'
-                                                    }}></span>
+                                                    {
+                                                        this.renderTarget()
+                                                    }
                                                     2020
                                                     <p style={{fontSize: '12px'}}>January</p>
                                                 </div>
@@ -968,19 +1129,11 @@ class CurriculumVitae extends Component {
                                                     padding:this.state.isMobile?'0 0 0 10px':'0 0 0 20px',
                                                     marginTop:this.state.isMobile?'98px':'45px',
                                                     }}>
-                                                    <span style={{
-                                                        background:'rgba(110,110,110,1)',
-                                                        width:'10px',
-                                                        height:'10px',
-                                                        borderRadius:'10px',
-                                                        display:'inline-block',
-                                                        position:'absolute',
-                                                        top:'50%',
-                                                        left:'-0px',
-                                                        transform:'translate(-50%,-50%)'
-                                                    }}></span>
+                                                    {
+                                                        this.renderTarget()
+                                                    }
                                                     2019
-                                                    <p style={{fontSize: '12px'}}>January</p>
+                                                    <p style={{fontSize: '12px'}}>October</p>
                                                 </div>
                                                 {/* <div style={{
                                                     position:'relative',
@@ -1007,10 +1160,10 @@ class CurriculumVitae extends Component {
                                                 marginBottom:'15px',
                                                 height:isDesktop?'auto':this.state.isTablet?'82.33px':'121px'
                                                 }}>
-                                                <div style={{fontSize:'15px',fontWeight:'600'}}>Freelancer</div>
+                                                <div style={{fontSize:'15px',fontWeight:'600'}}>Freelancer - Front End</div>
                                                 <div style={{color:'rgba(0,0,0,.4)',fontWeight:'500',marginBottom:'5px'}}>Yourpay Indonesia</div>
                                                 <div style={{marginBottom: '.5em'}}>Improved website application as part of company's internal application system</div>
-                                                <Label style={style.skillLabel} color='blue'>Vue JS</Label>
+                                                <Label style={style.skillLabel}>Vue JS</Label>
                                             </div>
 
                                             <div style={{marginBottom: '15px', color:'rgba(0,0,0,.4)'}}>
@@ -1029,9 +1182,9 @@ class CurriculumVitae extends Component {
                                                 <div
                                                     style={{marginBottom: '.5em'}}
                                                 >Created and design static websites for several business development in Bali, while working online in freelancer.com also as web designer</div>
-                                                <Label style={style.skillLabel} color='blue'>HTML/CSS</Label>
-                                                <Label style={style.skillLabel} color='blue'>Javascript</Label>
-                                                <Label style={style.skillLabel} color='blue'>Google Cloud Platform</Label>
+                                                <Label style={style.skillLabel}>HTML/CSS</Label>
+                                                <Label style={style.skillLabel}>Javascript</Label>
+                                                <Label style={style.skillLabel}>Google Cloud Platform</Label>
                                             </div>
 
                                             {/* <div style={{
@@ -1158,7 +1311,8 @@ class CurriculumVitae extends Component {
 const style={
     skillLabel:{
         margin:'0 .3em .3em 0',
-
+        background: '#007580',
+        color: 'white'
     },
     skillLabelMini: {
         margin:'0 .3em .3em 0',
