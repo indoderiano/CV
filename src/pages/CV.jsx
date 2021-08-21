@@ -859,21 +859,49 @@ class CurriculumVitae extends Component {
                                             <Label style={style.skillLabel}>React JS</Label>
                                             <Label style={style.skillLabel}>Vue JS</Label>
                                             <Label style={style.skillLabel}>React Native</Label>
+                                            <Label style={style.skillLabel}>
+                                                Yew
+                                                {/* <Label as='a' basic size='tiny'
+                                                    style={{
+                                                        backgroundColor: "white!important",
+                                                    }}
+                                                >
+                                                    Rust
+                                                </Label> */}
+                                                <span
+                                                    style={{
+                                                        background: "white",
+                                                        letterSpacing: "1px",
+                                                        padding: "2px 4px",
+                                                        marginLeft: "1em",
+                                                        // border: "1px solid orange",
+                                                        borderRadius: "3px",
+                                                        fontSize: "10px",
+                                                        fontWeight: "bolder",
+                                                        // color: "orange",
+                                                        color:'rgba(0,0,0,.6)',
+                                                        verticalAlign: "1px"
+                                                    }}
+                                                >
+                                                    Rust
+                                                </span>
+                                            </Label>
                                         </Grid.Column>
-                                        <Grid.Column width={6}>
+                                        <Grid.Column width={7}>
                                             <Header as={'h4'} style={{color:'rgba(0,0,0,.7)'}}>Back End Skills</Header>
                                             <Label style={style.skillLabel}>Node JS/Express</Label>
                                             <Label style={style.skillLabel}>My Sql</Label>
                                             <Label style={style.skillLabel}>Postgre Sql</Label>
+                                            <Label style={style.skillLabel}>MongoDB</Label>
                                             <Label style={style.skillLabel}>Sequelize</Label>
                                             <Label style={style.skillLabel}>Redis</Label>
                                             <Label style={style.skillLabel}>Socket IO</Label>
                                             <Label style={style.skillLabel}>Apollo GraphQL</Label>
                                         </Grid.Column>
-                                        <Grid.Column width={4}>
-                                            <Header as={'h4'} style={{color:'rgba(0,0,0,.7)'}}>Other Skills</Header>
-                                            <Label style={style.skillLabel}>Git</Label>
-                                            <Label style={style.skillLabel}>Google Auth</Label>
+                                        <Grid.Column width={3}>
+                                            <Header as={'h4'} style={{color:'rgba(0,0,0,.7)'}}>Other</Header>
+                                            {/* <Label style={style.skillLabel}>Git</Label> */}
+                                            {/* <Label style={style.skillLabel}>Google Auth</Label> */}
                                             <Label style={style.skillLabel}>Cloudinary</Label>
                                         </Grid.Column>
                                     </Grid>
@@ -982,7 +1010,7 @@ class CurriculumVitae extends Component {
                                 </div> */}
 
                                 <div style={{
-                                    width:'100%',
+                                    width:'95%',
                                     height:'1.5px',
                                     background:'rgba(0,0,0,.5)',
                                     margin:'0px 0'
@@ -995,7 +1023,7 @@ class CurriculumVitae extends Component {
                             <div style={{marginBottom:'20px',border:'0px solid black'}}>
                                 <h1 style={{fontWeight:'400',letterSpacing:'3px',marginBottom:'.4em'}}>About Me</h1>
                                 <div style={{fontSize:'15px', marginLeft:'15px'}}>
-                                    Hello, as coding enthusiast, I have a lot of passion for solving problems using analytical and logical thinking because it teaches me how to think. Therefore, I am keen to pursue a career in programming to improve my way of thinking in order to be a better person individually and in community.
+                                    Hello, as coding enthusiast, I have a lot of passion for solving problems using analytical and logical thinking because it teaches me how to think. And I am keen to improve my way of thinking in order to be a better person individually and in community.
                                 </div>
                             </div>
 
@@ -1012,41 +1040,24 @@ class CurriculumVitae extends Component {
                                     {/* <div>Grade: <span style={{fontWeight:'700',marginLeft:'.3em'}}>94</span></div> */}
 
                                 </div>
-                                <div style={{marginLeft:'15px', marginBottom: '15px'}}>
+                                {/* <div style={{marginLeft:'15px', marginBottom: '15px'}}>
                                     <div style={{fontSize:'15px',fontWeight:'600',margin:'10px 0 5px'}}>
                                         <div>Purwadhika, Digital Technology School (January 2020 - July 2020)</div>
-                                        {/* <div>January 2020 - July 2020</div> */}
-                                        {/* <a 
-                                            href='https://www.purwadhika.com/job-connector-web-mobile-development' 
-                                            target="_blank"
-                                            style={{
-                                                fontSize:'13px',
-                                                // textDecoration:'underline'
-                                            }}
-                                        >
-                                            {
-                                                this.state.pdf?
-                                                'www.purwadhika.com/job-connector-web-mobile-development'
-                                                :
-                                                'More About Purwadhika '
-                                            }
-                                            {
-                                                !this.state.pdf?
-                                                <Icon name='angle double right' style={{verticalAlign:'-1px'}}/>
-                                                : null
-                                            }
-                                        </a> */}
+                                        
                                     </div>
                                     <div style={{fontSize:'15px',fontWeight:'400'}}>Web And Mobile Development Course</div>
-                                    {/* <div>Electronic & engineering</div> */}
+                                    
                                     <div>Grade: <span style={{fontWeight:'700',marginLeft:'.3em'}}>94%</span></div>
 
-                                </div>
+                                </div> */}
                                 <div style={{marginLeft:'15px', marginTop: '10px'}}>
                                     {/* <div>2006 - 2009</div> */}
                                     <div style={{fontSize:'15px',fontWeight:'600',marginBottom:'5px'}}>King's College, University of London (2006 - 2009)</div>
-                                    <div style={{fontSize:'15px',fontWeight:'400'}}>Bachelor of Engineering </div>
-                                    <div>Electronic & engineering</div>
+                                    <div style={{fontSize:'15px',fontWeight:'400'}}>
+                                        Bachelor of Engineering 
+                                        <span style={{fontSize:'15px'}}> (Electronic & Engineering)</span>
+                                    </div>
+                                    {/* <div>Electronic & engineering</div> */}
                                     <div>Grade: upper second class degree (or equal to GPA 3.3<span style={{fontSize:'12px',verticalAlign:'2px'}}>+</span>)</div>
 
                                 </div>
@@ -1078,15 +1089,35 @@ class CurriculumVitae extends Component {
                                             }}>
                                                 <span style={{
                                                     width:'1.4px',
-                                                    height:'95%',
+                                                    height:'97%',
                                                     display:'inline-block',
                                                     background:'rgba(130,130,130,1)',
                                                     position:'absolute',
-                                                    top:'5%',
+                                                    top:'3%',
                                                     left:'0px',
                                                     transform:'translate(-50%,0)'
                                                 }}>
                                                 </span>
+
+                                                <div style={{position:'relative',padding:this.state.isMobile?'0 0 0 10px':'0 0 0 20px'}}>
+                                                    {
+                                                        this.renderTarget()
+                                                    }
+                                                    Present
+                                                    {/* 2020 <p style={{fontSize: '12px'}}>September</p> */}
+                                                </div>
+                                                <div style={{
+                                                    position:'relative',
+                                                    padding:this.state.isMobile?'0 0 0 10px':'0 0 0 20px',
+                                                    marginTop:'66px',
+                                                    marginBottom: '25px',
+                                                }}>
+                                                    {
+                                                        this.renderTarget()
+                                                    }
+                                                    2021 <p style={{fontSize: '12px'}}>May</p>
+                                                </div>
+
                                                 <div style={{position:'relative',padding:this.state.isMobile?'0 0 0 10px':'0 0 0 20px'}}>
                                                     {
                                                         this.renderTarget()
@@ -1104,19 +1135,19 @@ class CurriculumVitae extends Component {
                                                     2020 <p style={{fontSize: '12px'}}>August</p>
                                                 </div>
 
-                                                <div style={{
+                                                {/* <div style={{
                                                     position:'relative',
                                                     padding:this.state.isMobile?'0 0 0 10px':'0 0 0 20px',
                                                     marginTop:'11.5px'
                                                 }}>
                                                     <p style={{color: 'rgba(0,0,0,.4)', fontWeight: '400'}}>-----------</p>
                                                     <p style={{color: 'rgba(0,0,0,.4)', fontWeight: '400', marginTop: '18.5px'}}>-----------</p>
-                                                </div>
+                                                </div> */}
                                                 
                                                 <div style={{
                                                     position:'relative',
                                                     padding:this.state.isMobile?'0 0 0 10px':'0 0 0 20px',
-                                                    marginTop:this.state.isMobile?'98px':'15px',
+                                                    marginTop:this.state.isMobile?'98px':'25px',
                                                     }}>
                                                     {
                                                         this.renderTarget()
@@ -1157,7 +1188,36 @@ class CurriculumVitae extends Component {
                                         </Grid.Column>
                                         <Grid.Column width={13} style={{height:this.state.pdf?'auto':'auto',border:'0px solid yellow'}}>
                                             <div style={{
-                                                marginBottom:'15px',
+                                                marginBottom:'29px',
+                                                height:isDesktop?'auto':this.state.isTablet?'82.33px':'121px'
+                                                }}>
+                                                <div style={{fontSize:'15px',fontWeight:'600'}}>Web Developer - Front End</div>
+                                                <div style={{color:'rgba(0,0,0,.4)',fontWeight:'500',marginBottom:'5px'}}>Telkom Indonesia</div>
+                                                <div style={{marginBottom: '.5em'}}>Created and designed web application, provided training, and assigned tasks to team members</div>
+                                                <Label style={style.skillLabel}>
+                                                    Yew
+                                                    <span
+                                                        style={{
+                                                            background: "white",
+                                                            letterSpacing: "1px",
+                                                            padding: "2px 4px",
+                                                            marginLeft: "1em",
+                                                            // border: "1px solid orange",
+                                                            borderRadius: "3px",
+                                                            fontSize: "10px",
+                                                            fontWeight: "bolder",
+                                                            // color: "orange",
+                                                            color:'rgba(0,0,0,.6)',
+                                                            verticalAlign: "1px"
+                                                        }}
+                                                    >
+                                                        Rust
+                                                    </span>
+                                                </Label>
+                                            </div>
+                                            
+                                            <div style={{
+                                                marginBottom:'30px',
                                                 height:isDesktop?'auto':this.state.isTablet?'82.33px':'121px'
                                                 }}>
                                                 <div style={{fontSize:'15px',fontWeight:'600'}}>Freelancer - Front End</div>
@@ -1166,11 +1226,11 @@ class CurriculumVitae extends Component {
                                                 <Label style={style.skillLabel}>Vue JS</Label>
                                             </div>
 
-                                            <div style={{marginBottom: '15px', color:'rgba(0,0,0,.4)'}}>
+                                            {/* <div style={{marginBottom: '15px', color:'rgba(0,0,0,.4)'}}>
                                                 <p style={{marginBottom: '0'}}>-------------------------------------------------------------------------------</p>
                                                 <p style={{marginBottom: '0'}}>Purwadhika, Fullstack Web Development Course</p>
                                                 <p style={{marginBottom: '0'}}>-------------------------------------------------------------------------------</p>
-                                            </div>
+                                            </div> */}
 
 
                                             <div style={{
