@@ -509,6 +509,30 @@ class CurriculumVitae extends Component {
                                                 borderBottom: '1px solid white',
                                             }}
                                         >
+                                            <Header>Tango Store</Header>
+                                            <p
+                                                style={{margin: '.5em 0'}}
+                                            >A simple E-commerce Web App</p>
+                                            <a
+                                                href='https://tango-ecommerce.web.app/'
+                                                target="_blank"
+                                            >popstore-indo.herokuapp.com</a>
+                                            <div style={{marginTop: '.5em'}}>
+                                                <Label style={style.skillLabelMini}>Vue JS</Label>
+                                                <Label style={style.skillLabelMini}>Node JS</Label>
+                                                <Label style={style.skillLabelMini}>Express</Label>
+                                                {/* <Label style={style.skillLabelMini}>Nodemailer</Label> */}
+                                                <Label style={style.skillLabelMini}>Postresql</Label>
+                                                {/* <Label style={style.skillLabelMini}>Cloudinary</Label> */}
+                                            </div>
+                                        </List.Item>
+
+                                        {/* <List.Item
+                                            style={{
+                                                padding: '.6em 0',
+                                                borderBottom: '1px solid white',
+                                            }}
+                                        >
                                             <Header>Popstore</Header>
                                             <p
                                                 style={{margin: '.5em 0'}}
@@ -525,7 +549,7 @@ class CurriculumVitae extends Component {
                                                 <Label style={style.skillLabelMini}>Mysql</Label>
                                                 <Label style={style.skillLabelMini}>Cloudinary</Label>
                                             </div>
-                                        </List.Item>
+                                        </List.Item> */}
 
                                         <List.Item
                                             style={{
@@ -580,17 +604,16 @@ class CurriculumVitae extends Component {
                                         <List.Item
                                             style={{
                                                 padding: '1em 0',
-                                                marginTop: '1em',
                                                 marginTop: '.2em',
                                                 borderTop: '1px solid white',
                                             }}
                                         >
                                             {/* <Header>Jamboore</Header> */}
                                             <p
-                                                style={{marginBottom: '.5em'}}
+                                                style={{marginBottom: '.5em', paddingTop: '3em'}}
                                             >More portfolios on my personal website</p>
                                             <div
-                                                style={{marginTop: '1em'}}
+                                                style={{marginTop: '.5em'}}
                                             >
                                                 <Icon name='hand point right outline'/>
                                                 <a
