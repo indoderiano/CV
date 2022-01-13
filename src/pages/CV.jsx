@@ -264,7 +264,9 @@ class CurriculumVitae extends Component {
                                 >
                                     <div
                                         style={{
-                                            marginBottom: '.5em'
+                                            marginBottom: '.5em',
+                                            display: 'flex',
+                                            flexDirection: 'row'
                                         }}
                                     >
                                         <Icon name='mail' style={{marginRight: '1.5em'}}/>
@@ -274,7 +276,9 @@ class CurriculumVitae extends Component {
                                     </div>
                                     <div
                                         style={{
-                                            marginBottom: '.5em'
+                                            marginBottom: '.5em',
+                                            display: 'flex',
+                                            flexDirection: 'row'
                                         }}
                                     >
                                         <Icon name='phone' style={{marginRight: '1.5em'}}/>
@@ -284,7 +288,9 @@ class CurriculumVitae extends Component {
                                     </div>
                                     <div
                                         style={{
-                                            marginBottom: '.5em'
+                                            marginBottom: '.5em',
+                                            display: 'flex',
+                                            flexDirection: 'row'
                                         }}
                                     >
                                         <Icon name='map marker alternate' style={{marginRight: '1.5em', verticalAlign: 'top'}}/>
@@ -297,7 +303,7 @@ class CurriculumVitae extends Component {
                                             flexDirection: 'row'
                                         }}
                                     >
-                                        <Icon name='linkedin' style={{marginRight: '1.8em'}}/>
+                                        <Icon name='linkedin' style={{marginRight: '1.75em', marginLeft: '.15em'}}/>
                                         <span style={{wordBreak: 'break-word', wordWrap: ''}}>
                                             https://www.linkedin.com/in/indo-halim-8132971a5
                                         </span>
@@ -309,7 +315,7 @@ class CurriculumVitae extends Component {
                                             flexDirection: 'row'
                                         }}
                                     >
-                                        <Icon name='github' style={{marginRight: '1.6em'}}/>
+                                        <Icon name='github' style={{marginRight: '1.75em', marginLeft: '.1em'}}/>
                                         <span style={{wordBreak: 'break-word', wordWrap: ''}}>
                                             https://github.com/indoderiano
                                         </span>
