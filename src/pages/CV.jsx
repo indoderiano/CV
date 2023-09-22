@@ -925,7 +925,7 @@ class CurriculumVitae extends Component {
                                             <Label style={style.skillLabel}>Sequelize</Label>
                                             <Label style={style.skillLabel}>Redis</Label>
                                             <Label style={style.skillLabel}>Socket IO</Label>
-                                            <Label style={style.skillLabel}>Apollo GraphQL</Label>
+                                            {/* <Label style={style.skillLabel}>Apollo GraphQL</Label> */}
                                         </Grid.Column>
                                         <Grid.Column width={3}>
                                             <Header as={'h4'} style={{color:'rgba(0,0,0,.7)'}}>Other</Header>
@@ -1138,8 +1138,8 @@ class CurriculumVitae extends Component {
                                                 <div style={{
                                                     position:'relative',
                                                     padding:this.state.isMobile?'0 0 0 10px':'0 0 0 20px',
-                                                    marginTop:'66px',
-                                                    marginBottom: '25px',
+                                                    marginTop:'310px',
+                                                    marginBottom: '35px',
                                                 }}>
                                                     {
                                                         this.renderTarget()
@@ -1147,13 +1147,18 @@ class CurriculumVitae extends Component {
                                                     2021 <p style={{fontSize: '12px'}}>May</p>
                                                 </div>
 
-                                                <div style={{position:'relative',padding:this.state.isMobile?'0 0 0 10px':'0 0 0 20px'}}>
+                                                <div
+                                                    style={{
+                                                        position:'relative',
+                                                        padding:this.state.isMobile?'0 0 0 10px':'0 0 0 20px',
+                                                        // marginBottom: '45px',
+                                                }}>
                                                     {
                                                         this.renderTarget()
                                                     }
                                                     2020 <p style={{fontSize: '12px'}}>September</p>
                                                 </div>
-                                                <div style={{
+                                                {/* <div style={{
                                                     position:'relative',
                                                     padding:this.state.isMobile?'0 0 0 10px':'0 0 0 20px',
                                                     marginTop:'50px'
@@ -1162,7 +1167,7 @@ class CurriculumVitae extends Component {
                                                         this.renderTarget()
                                                     }
                                                     2020 <p style={{fontSize: '12px'}}>August</p>
-                                                </div>
+                                                </div> */}
 
                                                 {/* <div style={{
                                                     position:'relative',
@@ -1173,7 +1178,7 @@ class CurriculumVitae extends Component {
                                                     <p style={{color: 'rgba(0,0,0,.4)', fontWeight: '400', marginTop: '18.5px'}}>-----------</p>
                                                 </div> */}
                                                 
-                                                <div style={{
+                                                {/* <div style={{
                                                     position:'relative',
                                                     padding:this.state.isMobile?'0 0 0 10px':'0 0 0 20px',
                                                     marginTop:this.state.isMobile?'98px':'25px',
@@ -1183,11 +1188,11 @@ class CurriculumVitae extends Component {
                                                     }
                                                     2020
                                                     <p style={{fontSize: '12px'}}>January</p>
-                                                </div>
+                                                </div> */}
                                                 <div style={{
                                                     position:'relative',
                                                     padding:this.state.isMobile?'0 0 0 10px':'0 0 0 20px',
-                                                    marginTop:this.state.isMobile?'98px':'45px',
+                                                    marginTop:this.state.isMobile?'98px':'85px',
                                                     }}>
                                                     {
                                                         this.renderTarget()
@@ -1217,12 +1222,11 @@ class CurriculumVitae extends Component {
                                         </Grid.Column>
                                         <Grid.Column width={13} style={{height:this.state.pdf?'auto':'auto',border:'0px solid yellow'}}>
                                             <div style={{
-                                                marginBottom:'29px',
+                                                marginBottom:'10px',
                                                 height:isDesktop?'auto':this.state.isTablet?'82.33px':'121px'
                                                 }}>
                                                 <div style={{fontSize:'15px',fontWeight:'600'}}>Web Developer - Front End</div>
                                                 <div style={{color:'rgba(0,0,0,.4)',fontWeight:'500',marginBottom:'5px'}}>Telkom Indonesia</div>
-                                                <div style={{marginBottom: '.5em'}}>Created and designed web application, provided training, and assigned tasks to team members</div>
                                                 <Label style={style.skillLabel}>
                                                     Yew
                                                     <span
@@ -1243,9 +1247,63 @@ class CurriculumVitae extends Component {
                                                         Rust
                                                     </span>
                                                 </Label>
+                                                <div class="ui list">
+                                                    <div class="item">
+                                                        <i class="check square icon"></i>
+                                                        <div class="content">
+                                                            {/* <div class="header">site</div> */}
+                                                            <div class="description">Developed and maintain web application with rust based language, including user interface and responsive design</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <i class="check square icon"></i>
+                                                        <div class="content">
+                                                            <div class="description">Integrated with backend logic and APIs</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <i class="check square icon"></i>
+                                                        <div class="content">
+                                                            <div class="description">Conducted rigorous testing and debugging to ensure bug-free applications</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <i class="check square icon"></i>
+                                                        <div class="content">
+                                                            <div class="description">Participated in code reviews to maintain code quality</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <i class="check square icon"></i>
+                                                        <div class="content">
+                                                            <div class="description">Mentor junior frontend developers to enhance their coding skills and contribute effectively to project development.</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <i class="star icon"></i>
+                                                        <div class="content">
+                                                            <div class="header">Achievements</div>
+                                                            <div class="list">
+                                                                <div class="item">
+                                                                    <i class="check square icon"></i>
+                                                                    <div class="content">
+                                                                        <div class="description">Successfully integrated a complex API, enhancing the website's functionality.</div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="item">
+                                                                    <i class="check square icon"></i>
+                                                                    <div class="content">
+                                                                        <div class="description">Improved development times by 30% through performance optimization method</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                {/* <div style={{marginBottom: '.5em'}}>Developed and maintained web application with rust based language, Created and designed web application, provided training, and assigned tasks to team members</div> */}
                                             </div>
                                             
-                                            <div style={{
+                                            {/* <div style={{
                                                 marginBottom:'30px',
                                                 height:isDesktop?'auto':this.state.isTablet?'82.33px':'121px'
                                                 }}>
@@ -1253,13 +1311,13 @@ class CurriculumVitae extends Component {
                                                 <div style={{color:'rgba(0,0,0,.4)',fontWeight:'500',marginBottom:'5px'}}>Yourpay Indonesia</div>
                                                 <div style={{marginBottom: '.5em'}}>Improved website application as part of company's internal application system</div>
                                                 <Label style={style.skillLabel}>Vue JS</Label>
-                                            </div>
-
-                                            {/* <div style={{marginBottom: '15px', color:'rgba(0,0,0,.4)'}}>
-                                                <p style={{marginBottom: '0'}}>-------------------------------------------------------------------------------</p>
-                                                <p style={{marginBottom: '0'}}>Purwadhika, Fullstack Web Development Course</p>
-                                                <p style={{marginBottom: '0'}}>-------------------------------------------------------------------------------</p>
                                             </div> */}
+
+                                            <div style={{marginBottom: '15px', color:'rgba(0,0,0,.4)'}}>
+                                                <p style={{marginBottom: '0'}}>-------------------------------------------------------------------------------</p>
+                                                <p style={{marginBottom: '0'}}>Hacktiv8, Fullstack Web Development Course</p>
+                                                <p style={{marginBottom: '0'}}>-------------------------------------------------------------------------------</p>
+                                            </div>
 
 
                                             <div style={{
@@ -1270,7 +1328,7 @@ class CurriculumVitae extends Component {
                                                 {/* <div style={{color:'rgba(0,0,0,.4)',fontWeight:'500',marginBottom:'5px'}}>Hawila Berkat Anugrah Ltd</div> */}
                                                 <div
                                                     style={{marginBottom: '.5em'}}
-                                                >Created and design static websites for several business development in Bali, while working online in freelancer.com also as web designer</div>
+                                                >Created and design static websites</div>
                                                 <Label style={style.skillLabel}>HTML/CSS</Label>
                                                 <Label style={style.skillLabel}>Javascript</Label>
                                                 <Label style={style.skillLabel}>Google Cloud Platform</Label>
