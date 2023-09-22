@@ -512,7 +512,7 @@ class CurriculumVitae extends Component {
                                         <List.Item
                                             style={{
                                                 padding: '.6em 0',
-                                                borderBottom: '1px solid white',
+                                                borderBottom: '1px solid rgba(255,255,255,.3)',
                                             }}
                                         >
                                             <Header>Tango Store</Header>
@@ -560,9 +560,9 @@ class CurriculumVitae extends Component {
                                         <List.Item
                                             style={{
                                                 padding: '.6em 0',
-                                                borderBottom: '1px solid white',
+                                                borderBottom: '1px solid rgba(255,255,255,.3)',
                                                 marginTop: '.2em',
-                                                borderTop: '1px solid white',
+                                                borderTop: '1px solid rgba(255,255,255,.3)',
                                             }}
                                         >
                                             <Header>Kanban</Header>
@@ -586,9 +586,9 @@ class CurriculumVitae extends Component {
                                         <List.Item
                                             style={{
                                                 padding: '.6em 0',
-                                                borderBottom: '1px solid white',
+                                                borderBottom: '1px solid rgba(255,255,255,.3)',
                                                 marginTop: '.2em',
-                                                borderTop: '1px solid white',
+                                                borderTop: '1px solid rgba(255,255,255,.3)',
                                             }}
                                         >
                                             <Header>Jamboore</Header>
@@ -611,7 +611,7 @@ class CurriculumVitae extends Component {
                                             style={{
                                                 padding: '1em 0',
                                                 marginTop: '.2em',
-                                                borderTop: '1px solid white',
+                                                borderTop: '1px solid rgba(255,255,255,.3)',
                                             }}
                                         >
                                             {/* <Header>Jamboore</Header> */}
@@ -867,7 +867,7 @@ class CurriculumVitae extends Component {
 
                                 <div
                                     style={{
-                                        border:'1.5px solid rgba(0,0,0,.5)',
+                                        border:'1.5px solid rgba(0,0,0,.25)',
                                         borderTop:'0',
                                         borderLeft:'0',
                                         borderRight:'0',
@@ -1041,7 +1041,7 @@ class CurriculumVitae extends Component {
                                 <div style={{
                                     width:'95%',
                                     height:'1.5px',
-                                    background:'rgba(0,0,0,.5)',
+                                    background:'rgba(0,0,0,.25)',
                                     margin:'0px 0'
                                 }}/>
 
@@ -1264,13 +1264,13 @@ class CurriculumVitae extends Component {
                                                     <div class="item">
                                                         <i class="check square icon"></i>
                                                         <div class="content">
-                                                            <div class="description">Conducted rigorous testing and debugging to ensure bug-free applications</div>
+                                                            <div class="description">Performed thorough testing and debugging to ensure error-free applications</div>
                                                         </div>
                                                     </div>
                                                     <div class="item">
                                                         <i class="check square icon"></i>
                                                         <div class="content">
-                                                            <div class="description">Participated in code reviews to maintain code quality</div>
+                                                            <div class="description">Conducted in code reviews to maintain code quality</div>
                                                         </div>
                                                     </div>
                                                     <div class="item">
