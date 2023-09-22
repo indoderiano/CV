@@ -188,7 +188,7 @@ class CurriculumVitae extends Component {
                                 >
                                     <div style={{
                                         textAlign:'center',
-                                        width:isDesktop?'100%':this.state.isTablet?'250px':'100%',
+                                        width:isDesktop?'100%':this.state.isTablet?'250px':'70%',
                                         paddingTop: '100%',
                                         position: 'relative',
                                         display:'inline-block',
@@ -203,7 +203,7 @@ class CurriculumVitae extends Component {
                                             // size='small' 
                                             style={{
                                                 display:'inline-block',
-                                                width:this.state.isMobile?'150px':'100%',
+                                                width:this.state.isMobile?'100%':'100%',
                                                 // height:this.state.isMobile?'150px':'271.25636px',
                                                 // height:this.state.isMobile?'150px':'200px',
                                                 position: 'absolute',
@@ -1138,7 +1138,7 @@ class CurriculumVitae extends Component {
                                                 <div style={{
                                                     position:'relative',
                                                     padding:this.state.isMobile?'0 0 0 10px':'0 0 0 20px',
-                                                    marginTop:'310px',
+                                                    marginTop:this.state.isMobile?'355px':'310px',
                                                     marginBottom: '35px',
                                                 }}>
                                                     {
@@ -1223,7 +1223,7 @@ class CurriculumVitae extends Component {
                                         <Grid.Column width={13} style={{height:this.state.pdf?'auto':'auto',border:'0px solid yellow'}}>
                                             <div style={{
                                                 marginBottom:'10px',
-                                                height:isDesktop?'auto':this.state.isTablet?'82.33px':'121px'
+                                                height:isDesktop?'auto':this.state.isTablet?'82.33px':'391px'
                                                 }}>
                                                 <div style={{fontSize:'15px',fontWeight:'600'}}>Web Developer - Front End</div>
                                                 <div style={{color:'rgba(0,0,0,.4)',fontWeight:'500',marginBottom:'5px'}}>Telkom Indonesia</div>
