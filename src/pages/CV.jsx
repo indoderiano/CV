@@ -862,7 +862,8 @@ class CurriculumVitae extends Component {
                                         margin:'0 0 20px',
                                         color: 'rgba(0,0,0,.7)',
                                         fontWeight: '300',
-                                        fontSize: '27px'
+                                        fontSize: '21px',
+                                        letterSpacing: '8px',
                                     }}>Web Fullstack Developer</Header>
 
                                 <div
@@ -1138,7 +1139,7 @@ class CurriculumVitae extends Component {
                                                 <div style={{
                                                     position:'relative',
                                                     padding:this.state.isMobile?'0 0 0 10px':'0 0 0 20px',
-                                                    marginTop:'66px',
+                                                    marginTop:'165px',
                                                     marginBottom: '25px',
                                                 }}>
                                                     {
@@ -1173,7 +1174,7 @@ class CurriculumVitae extends Component {
                                                     <p style={{color: 'rgba(0,0,0,.4)', fontWeight: '400', marginTop: '18.5px'}}>-----------</p>
                                                 </div> */}
                                                 
-                                                <div style={{
+                                                {/* <div style={{
                                                     position:'relative',
                                                     padding:this.state.isMobile?'0 0 0 10px':'0 0 0 20px',
                                                     marginTop:this.state.isMobile?'98px':'25px',
@@ -1194,7 +1195,7 @@ class CurriculumVitae extends Component {
                                                     }
                                                     2019
                                                     <p style={{fontSize: '12px'}}>October</p>
-                                                </div>
+                                                </div> */}
                                                 {/* <div style={{
                                                     position:'relative',
                                                     padding:this.state.isMobile?'0 0 0 10px':'0 0 0 20px',
@@ -1217,12 +1218,12 @@ class CurriculumVitae extends Component {
                                         </Grid.Column>
                                         <Grid.Column width={13} style={{height:this.state.pdf?'auto':'auto',border:'0px solid yellow'}}>
                                             <div style={{
-                                                marginBottom:'29px',
+                                                marginBottom:'15px',
                                                 height:isDesktop?'auto':this.state.isTablet?'82.33px':'121px'
                                                 }}>
                                                 <div style={{fontSize:'15px',fontWeight:'600'}}>Web Developer - Front End</div>
                                                 <div style={{color:'rgba(0,0,0,.4)',fontWeight:'500',marginBottom:'5px'}}>Telkom Indonesia</div>
-                                                <div style={{marginBottom: '.5em'}}>Created and designed web application, provided training, and assigned tasks to team members</div>
+                                                <div style={{marginBottom: '.5em'}}>Create and design web application, provide training, and assign tasks to team members</div>
                                                 <Label style={style.skillLabel}>
                                                     Yew
                                                     <span
@@ -1244,6 +1245,15 @@ class CurriculumVitae extends Component {
                                                     </span>
                                                 </Label>
                                             </div>
+
+                                            <div style={{
+                                                marginBottom:'29px',
+                                                height:isDesktop?'auto':this.state.isTablet?'82.33px':'121px'
+                                                }}>
+                                                <div style={{fontSize:'15px',fontWeight:'600'}}>Mentor - Front End (Part Time)</div>
+                                                <div style={{color:'rgba(0,0,0,.4)',fontWeight:'500',marginBottom:'5px'}}>Ruang Guru</div>
+                                                <div style={{marginBottom: '.5em'}}>Assists and mentoring college students for basics javascript frontend subjects</div>
+                                            </div>
                                             
                                             <div style={{
                                                 marginBottom:'30px',
@@ -1262,19 +1272,18 @@ class CurriculumVitae extends Component {
                                             </div> */}
 
 
-                                            <div style={{
+                                            {/* <div style={{
                                                 marginBottom:'10px',
                                                 height:isDesktop?'auto':this.state.isTablet?'82.33px':'121px'
                                                 }}>
                                                 <div style={{fontSize:'15px',fontWeight:'600'}}>Web Designer</div>
-                                                {/* <div style={{color:'rgba(0,0,0,.4)',fontWeight:'500',marginBottom:'5px'}}>Hawila Berkat Anugrah Ltd</div> */}
                                                 <div
                                                     style={{marginBottom: '.5em'}}
                                                 >Created and design static websites for several business development in Bali, while working online in freelancer.com also as web designer</div>
                                                 <Label style={style.skillLabel}>HTML/CSS</Label>
                                                 <Label style={style.skillLabel}>Javascript</Label>
                                                 <Label style={style.skillLabel}>Google Cloud Platform</Label>
-                                            </div>
+                                            </div> */}
 
                                             {/* <div style={{
                                                 marginBottom:'10px',
