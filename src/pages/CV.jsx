@@ -849,7 +849,7 @@ class CurriculumVitae extends Component {
                             
                             <div style={{
                                 display:isDesktop?'block':'none',
-                                margin:this.state.pdf?'0px 0 20px':'30px 0',
+                                margin:this.state.pdf?'0px 0 10px':'30px 0',
                                 border:'0px solid black'
                                 }}>
                                 <Header as={'h1'} style={{fontSize:'60px',fontWeight:'200', margin: '0 0 0 -5px'}}>Indo Halim</Header>
@@ -1461,7 +1461,7 @@ class CurriculumVitae extends Component {
                                         borderBottom: '0px solid rgba(0,0,0,.25)',
                                     }}
                                 >
-                                    <div style={{fontSize:'15px',fontWeight:'600'}}>Identity and Access Management System</div>
+                                    <div style={{fontSize:'15px',fontWeight:'800', color: 'rgba(0,0,0,.65)'}}>Identity and Access Management System</div>
                                     <div style={{color:'rgba(0,0,0,.4)',fontWeight:'800',marginBottom:'5px'}}>Telkom Indonesia</div>
                                     {/* <div style={{fontSize:'15px',fontWeight:'600'}}>(May 2021 - Present)</div> */}
                                     <div style={{fontSize:'15px',fontWeight:'600'}}>Role: Lead Frontend Developer (May 2021 - Present)</div>
@@ -1531,8 +1531,8 @@ class CurriculumVitae extends Component {
 
                                 </div>
 
-                                <div style={{marginLeft:'15px', marginBottom: '15px'}}>
-                                    <div style={{fontSize:'15px',fontWeight:'600'}}>Identity and Access Management System Optimization</div>
+                                <div style={{marginLeft:'15px', marginBottom: '20px'}}>
+                                    <div style={{fontSize:'15px',fontWeight:'800', color: 'rgba(0,0,0,.65)'}}>Identity and Access Management System Optimization</div>
                                     <div style={{color:'rgba(0,0,0,.4)',fontWeight:'800',marginBottom:'5px'}}>Telkom Indonesia</div>
                                     {/* <div style={{fontSize:'15px',fontWeight:'600'}}>(May 2021 - Present)</div> */}
                                     <div style={{fontSize:'15px',fontWeight:'600'}}>Role: Scrum Master (August 2023)</div>
@@ -1603,6 +1603,21 @@ class CurriculumVitae extends Component {
                                     </div>
 
                                 </div> */}
+
+
+                                <div style={{
+                                    width:'95%',
+                                    height:'1.5px',
+                                    background:'rgba(0,0,0,.25)',
+                                    margin:'0px 0px 2px 0',
+                                }}/>
+
+                                <div style={{
+                                    width:'100%',
+                                    height:'1.5px',
+                                    background:'rgba(0,0,0,.25)',
+                                    margin:'0px 0'
+                                }}/>
 
                             </div>
                         
