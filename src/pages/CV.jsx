@@ -6,8 +6,9 @@ import { Link } from 'react-router-dom';
 
 class CurriculumVitae extends Component {
     state = { 
-        paperWidth:950,
-        paperHeight:1227,
+        paperWidth:940,
+        // paperHeight:1227,
+        paperHeight:1322,
         minHorizontalPadding:20,
 
         isTablet:false,
@@ -723,7 +724,7 @@ class CurriculumVitae extends Component {
                                 // backgroundColor:'rgba(0,0,0,.1)',
                                 backgroundColor:'rgba(230,230,230,1)',
                                 width:isDesktop?`${this.state.paperWidth-270}px`:'100%',
-                                padding:this.state.isMobile?'40px 20px 60px':'10px 30px 30px 30px',
+                                padding:this.state.isMobile?'40px 20px 60px':'10px 40px 35px 30px',
                                 color:'rgba(0,0,0,.8)',
                                 position: 'relative',
                             }}
@@ -849,7 +850,7 @@ class CurriculumVitae extends Component {
                             
                             <div style={{
                                 display:isDesktop?'block':'none',
-                                margin:this.state.pdf?'0px 0 10px':'30px 0',
+                                margin:this.state.pdf?'0px 0 30px':'30px 0',
                                 border:'0px solid black'
                                 }}>
                                 <Header as={'h1'} style={{fontSize:'60px',fontWeight:'200', margin: '0 0 0 -5px'}}>Indo Halim</Header>
@@ -1034,7 +1035,7 @@ class CurriculumVitae extends Component {
 
                                 <div style={{
                                     width:'95%',
-                                    height:'1.5px',
+                                    height:'2px',
                                     background:'rgba(0,0,0,.25)',
                                     margin:'0px 0'
                                 }}/>
@@ -1043,7 +1044,7 @@ class CurriculumVitae extends Component {
                                 <div style={{fontSize:'18px'}}>Whatsapp: +6281999041167</div> */}
                             </div>
 
-                            <div style={{marginBottom:'15px',border:'0px solid black'}}>
+                            <div style={{marginBottom:'30px',border:'0px solid black'}}>
                                 <h1 style={{fontWeight:'400',letterSpacing:'3px',marginBottom:'.2em'}}>Objective</h1>
                                 <div style={{fontSize:'15px', marginLeft:'15px'}}>
                                     Dedicated Frontend Developer with 3 years of experience creating visually appealing and user-friendly web interfaces. Proficient in HTML, CSS, JavaScript, and Rust. Seeking opportunities to contribute my skills and expertise to dynamic web development projects.
@@ -1090,7 +1091,7 @@ class CurriculumVitae extends Component {
                             <div style={{
                                 border:'0px solid white',
                                 position:'relative',
-                                marginBottom:'20px',
+                                marginBottom:'30px',
                                 // maxWidth:'570px',
                                 }}>
                                 <h1 style={{fontWeight:'400',letterSpacing:'3px'}}>Experience</h1>
@@ -1186,7 +1187,7 @@ class CurriculumVitae extends Component {
                                                 <div style={{
                                                     position:'relative',
                                                     padding:this.state.isMobile?'0 0 0 10px':'0 0 0 20px',
-                                                    marginTop:this.state.isMobile?'98px':'40px',
+                                                    marginTop:this.state.isMobile?'98px':'37px',
                                                     }}>
                                                     {
                                                         this.renderTarget()
@@ -1318,9 +1319,9 @@ class CurriculumVitae extends Component {
                                             </div> */}
 
                                             <div style={{marginBottom: '20px', color:'rgba(0,0,0,.4)'}}>
-                                                <p style={{marginBottom: '0'}}>-----------------------------------------------------------------------------------------</p>
+                                                <p style={{marginBottom: '0'}}>--------------------------------------------------------------------------------------</p>
                                                 <p style={{marginBottom: '0'}}>Hacktiv8, Fullstack Web Development Course</p>
-                                                <p style={{marginBottom: '0'}}>-----------------------------------------------------------------------------------------</p>
+                                                <p style={{marginBottom: '0'}}>--------------------------------------------------------------------------------------</p>
                                             </div>
 
 
@@ -1531,7 +1532,7 @@ class CurriculumVitae extends Component {
 
                                 </div>
 
-                                <div style={{marginLeft:'15px', marginBottom: '20px'}}>
+                                <div style={{marginLeft:'15px', marginBottom: '30px'}}>
                                     <div style={{fontSize:'15px',fontWeight:'800', color: 'rgba(0,0,0,.65)'}}>Identity and Access Management System Optimization</div>
                                     <div style={{color:'rgba(0,0,0,.4)',fontWeight:'800',marginBottom:'5px'}}>Telkom Indonesia</div>
                                     {/* <div style={{fontSize:'15px',fontWeight:'600'}}>(May 2021 - Present)</div> */}
@@ -1607,7 +1608,7 @@ class CurriculumVitae extends Component {
 
                                 <div style={{
                                     width:'95%',
-                                    height:'1.5px',
+                                    height:'2px',
                                     background:'rgba(0,0,0,.25)',
                                     margin:'0px 0px 2px 0',
                                 }}/>
