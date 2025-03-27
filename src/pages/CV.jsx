@@ -868,7 +868,7 @@ class CurriculumVitae extends Component {
                             
                             <div style={{
                                 display:isDesktop?'block':'none',
-                                margin:this.state.pdf?'0px 0 10px':'30px 0',
+                                margin:this.state.pdf?'0px 0 30px':'30px 0',
                                 border:'0px solid black'
                                 }}>
                                 <Header as={'h1'} style={{fontSize:'42px',fontWeight:'600', color: 'rgba(0,0,0,.8)', margin: '0 0 0 -3px'}}>Indo Halim</Header>
@@ -1074,7 +1074,7 @@ class CurriculumVitae extends Component {
 
                                 <div style={{
                                     width:'95%',
-                                    height:'1.5px',
+                                    height:'2px',
                                     background:'rgba(0,0,0,.25)',
                                     margin:'0px 0 25px 0'
                                 }}/>
@@ -1260,7 +1260,7 @@ class CurriculumVitae extends Component {
                                                 {/* <div style={{
                                                     position:'relative',
                                                     padding:this.state.isMobile?'0 0 0 10px':'0 0 0 20px',
-                                                    marginTop:this.state.isMobile?'98px':'40px',
+                                                    marginTop:this.state.isMobile?'98px':'37px',
                                                     }}>
                                                     {
                                                         this.renderTarget()
@@ -2013,7 +2013,7 @@ class CurriculumVitae extends Component {
 
                                 {/* <div style={{
                                     width:'95%',
-                                    height:'1.5px',
+                                    height:'2px',
                                     background:'rgba(0,0,0,.25)',
                                     margin:'0px 0px 2px 0',
                                 }}/>
