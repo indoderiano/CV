@@ -12,7 +12,9 @@ class CurriculumVitae extends Component {
 
         isTablet:false,
         isMobile:false,
-        pdf:true
+        pdf:true,
+
+        summary: 'Dedicated Frontend Developer with more than 3 years of experience creating high performance, writing clean, maintainable, clear structure codes and visually appealing, and user-friendly web interfaces. Proficient in HTML, CSS, JavaScript, Typescript, and Rust. Seeking opportunities to contribute my skills and expertise to dynamic web development projects.'
      }
 
     componentDidMount=()=>{
@@ -170,7 +172,7 @@ class CurriculumVitae extends Component {
                             style={{
                                 // backgroundColor:'rgba(0,0,0,.0)',
                                 backgroundColor:'rgba(105,105,105,.05)',
-                                width:isDesktop?'270px':'100%'
+                                width:isDesktop?'300px':'100%'
                             }}
                         >
                             <div style={{
@@ -448,9 +450,14 @@ class CurriculumVitae extends Component {
                                     <Header as={'h4'} style={{color:'white'}}>About Me</Header>
                                     <p>Hello, as coding enthusiast, I have a lot of passion for solving problems using analytical and logical thinking. Quote from Steve Jobs, "Everybody should learn to program a computer, because it teaches you how to think."</p>
                                 </div> */}
+                                <div style={{fontSize:'15px', marginBottom:'40px' ,display: 'block'}}>
+                                    <h1 style={{fontWeight:'400',letterSpacing:'3px',marginBottom:'.3em'}}>Summary</h1>
+                                    {this.state.summary}
+                                </div>
 
                                 <div style={{marginTop: '.5em', marginBottom: '40px'}}>
-                                    <h3 style={{fontWeight:'400', fontSize: '21px',letterSpacing:'0px',marginBottom:'.3em'}}>Key Achievement</h3>
+                                    {/* <h3 style={{fontWeight:'400', fontSize: '21px',letterSpacing:'0px',marginBottom:'.3em'}}>Key Achievement</h3> */}
+                                    <h1 style={{fontWeight:'400',letterSpacing:'3px',marginBottom:'.3em'}}>Achievement</h1>
                                     <Header as={'h5'} style={{color:'white', marginTop: '0', marginBottom: '.4em'}}>40% Improved in Development Efficiency</Header>
                                     <div style={{marginTop: '2px'}}>
                                         <div class="content">
@@ -458,11 +465,6 @@ class CurriculumVitae extends Component {
                                         </div>
                                     </div>
                                 </div>
-
-                                <div style={{fontSize:'15px', marginBottom:'40px' ,display: 'none'}}>
-                                    Dedicated Frontend Developer with 3 years of experience creating visually appealing and user-friendly web interfaces. Proficient in HTML, CSS, JavaScript, and Rust. Seeking opportunities to contribute my skills and expertise to dynamic web development projects.
-                                </div>
-
 
                                 <div style={{marginBottom:'45px',border:'0px solid black', display: 'none'}}>
                                     <h1 style={{fontWeight:'400',letterSpacing:'3px',marginBottom:'.2em'}}>Education</h1>
@@ -739,8 +741,8 @@ class CurriculumVitae extends Component {
                             style={{
                                 // backgroundColor:'rgba(0,0,0,.1)',
                                 backgroundColor:'rgba(230,230,230,1)',
-                                width:isDesktop?`${this.state.paperWidth-270}px`:'100%',
-                                padding:this.state.isMobile?'40px 20px 60px':'10px 30px 30px 30px',
+                                width:isDesktop?`${this.state.paperWidth-300}px`:'100%',
+                                padding:this.state.isMobile?'40px 20px 60px':'20px 50px 30px 30px',
                                 color:'rgba(0,0,0,.8)',
                                 position: 'relative',
                             }}
@@ -869,7 +871,7 @@ class CurriculumVitae extends Component {
                                 margin:this.state.pdf?'0px 0 10px':'30px 0',
                                 border:'0px solid black'
                                 }}>
-                                <Header as={'h1'} style={{fontSize:'42px',fontWeight:'600', color: 'rgba(0,0,0,.8)', margin: '0 0 0 -5px'}}>Indo Halim</Header>
+                                <Header as={'h1'} style={{fontSize:'42px',fontWeight:'600', color: 'rgba(0,0,0,.8)', margin: '0 0 0 -3px'}}>Indo Halim</Header>
                                 <Header as={'h4'}
                                     style={{
                                         margin:'-5px 0 15px',
@@ -879,20 +881,20 @@ class CurriculumVitae extends Component {
                                         // letterSpacing: '2.4px',
                                     }}>Web Fullstack Developer</Header>
 
-                                <div style={{marginBottom: '15px', display: 'flex', flexDirection: 'row', gap: '2em'}}>
-                                    <div>
+                                <div style={{marginBottom: '15px', display: 'flex', flexDirection: 'row', gap: '1.1em'}}>
+                                    <div style={{whiteSpace: 'nowrap'}}>
                                         <Icon name='mail' style={{marginRight: '.5em'}}/>
                                         <span>
                                             mde50526@gmail.com
                                         </span>
                                     </div>
-                                    <div>
+                                    <div style={{whiteSpace: 'nowrap'}}>
                                         <Icon name='phone' style={{marginRight: '.5em'}}/>
                                         <span >
                                             +6281999041167 (<span style={{fontWeight: '700', color: 'rgba(0,0,0,.7)'}}>whatsapp</span>)
                                         </span>
                                     </div>
-                                    <div>
+                                    <div style={{whiteSpace: 'nowrap'}}>
                                         <Icon name='linkedin' style={{marginRight: '.5em', marginLeft: '0em'}}/>
                                         <span style={{wordBreak: 'break-word', wordWrap: ''}}>
                                             linkedin.com/in/indo-halim
@@ -1067,33 +1069,34 @@ class CurriculumVitae extends Component {
                                     width:'100%',
                                     height:'1.5px',
                                     background:'rgba(0,0,0,.25)',
-                                    margin:'0px 0px 2px 0',
+                                    margin:'50px 0px 2px 0',
                                 }}/>
 
                                 <div style={{
                                     width:'95%',
                                     height:'1.5px',
                                     background:'rgba(0,0,0,.25)',
-                                    margin:'0px 0'
+                                    margin:'0px 0 25px 0'
                                 }}/>
 
                                 {/* <div style={{fontSize:'18px',marginBottom:'5px'}}>Email: mde50526@gmail.com</div>
                                 <div style={{fontSize:'18px'}}>Whatsapp: +6281999041167</div> */}
                             </div>
 
-                            <div style={{marginTop: '20px',marginBottom:'25px',border:'0px solid black'}}>
+                            {/* <div style={{marginTop: '20px',marginBottom:'25px',border:'0px solid black'}}>
                                 <h2 style={{fontWeight:'400',letterSpacing:'3px',marginBottom:'.2em'}}>Summary</h2>
                                 <div style={{fontSize:'15px', marginLeft:'15px'}}>
-                                    Dedicated Frontend Developer with 3 years of experience creating visually appealing and user-friendly web interfaces. Proficient in HTML, CSS, JavaScript, and Rust. Seeking opportunities to contribute my skills and expertise to dynamic web development projects.
+                                    {this.state.summary}
                                 </div>
-                            </div>
+                            </div> */}
 
                             <div style={{marginBottom:'25px',border:'0px solid black', display: "block"}}>
                                 <h2 style={{fontWeight:'400',letterSpacing:'3px',marginBottom:'.4em'}}>Education</h2>
                                 <div style={{marginLeft:'15px', marginBottom: '15px'}}>
-                                    {/* <div style={{fontSize:'15px',fontWeight:'600',margin:'10px 0 5px'}}>
-                                        <div>Hacktiv8 Coding Bootcamp - 2021</div>
-                                    </div> */}
+                                    <div style={{fontSize:'15px',fontWeight:'800', color: 'rgba(0,0,0,.65)',margin:'10px 0 5px'}}>
+                                        {/* <div>Hacktiv8 Coding Bootcamp - 2021</div> */}
+                                        Hacktiv8 Coding Bootcamp
+                                    </div>
                                     <div
                                         style={{
                                             display: 'flex',
@@ -1101,9 +1104,9 @@ class CurriculumVitae extends Component {
                                         }}
                                     >
                                         <div style={{fontSize:'15px',fontWeight:'400'}}>Fullstack Web Development Javascript (2021)</div>
-                                        <div style={{color:'rgba(0,0,0,.6)',fontWeight:'600',marginBottom:'0px'}}>
+                                        {/* <div style={{color:'rgba(0,0,0,.6)',fontWeight:'600',marginBottom:'0px'}}>
                                             Hacktiv8 Coding Bootcamp
-                                        </div>
+                                        </div> */}
                                     </div>
                                     {/* <div style={{
                                         fontSize: '13px',
@@ -1129,7 +1132,9 @@ class CurriculumVitae extends Component {
                                 </div> */}
                                 <div style={{marginLeft:'15px'}}>
                                     {/* <div>2006 - 2009</div> */}
-                                    {/* <div style={{fontSize:'15px',fontWeight:'600',marginBottom:'5px'}}>King's College, University of London - 2009</div> */}
+                                    <div style={{fontSize:'15px',fontWeight:'800', color: 'rgba(0,0,0,.65)',margin:'10px 0 5px'}}>
+                                        King's College, University of London
+                                    </div>
                                     <div
                                         style={{
                                             display: 'flex',
@@ -1137,22 +1142,7 @@ class CurriculumVitae extends Component {
                                         }}
                                     >
                                         <div style={{fontSize:'15px',fontWeight:'400'}}>Bachelor's in Computer Engineering (2006 - 2009)</div>
-                                        <div style={{color:'rgba(0,0,0,.6)',fontWeight:'600',marginBottom:'0px'}}>
-                                            King's College London
-                                        </div>
-                                        {/* <div style={{fontSize:'15px',fontWeight:'400'}}>
-                                            Bachelor of Engineering 
-                                            <span style={{fontSize:'15px'}}> (Electronic & Engineering)</span>
-                                        </div>
-                                        <div style={{color:'rgba(0,0,0,.4)',fontWeight:'800',marginBottom:'4px'}}>King's College London</div> */}
                                     </div>
-                                    {/* <div style={{
-                                        fontSize: '13px',
-                                        fontWeight: '600',
-                                        color: 'rgba(0,0,0,.6)'
-                                    }}>
-                                        Year 2006 - 2009
-                                    </div> */}
                                     <div>Grade: <span style={{fontWeight:'700', color: 'rgba(0,0,0,.65)',marginLeft:'.3em'}}>Upper second class degree</span> (or equal to GPA 3.3<span style={{fontSize:'12px',verticalAlign:'2px'}}>+</span>)</div>
 
                                 </div>
@@ -1359,7 +1349,7 @@ class CurriculumVitae extends Component {
                                                     marginBottom: '4px',
                                                 }}>
                                                     <div style={{fontSize:'15px',fontWeight:'800', color: 'rgba(0,0,0,.65)'}}>Web Developer - Front End</div>
-                                                    <div style={{color:'rgba(0,0,0,.4)',fontWeight:'800',color:'rgba(0,0,0,.6)',fontWeight:'600',marginBottom:'0px'}}>Telkom Indonesia</div>
+                                                    <div style={{fontSize:'15px',fontWeight:'800', color: 'rgba(0,0,0,.65)'}}>Telkom Indonesia</div>
                                                 </div>
                                                 {/* <Label style={style.skillLabel}>
                                                     Yew
@@ -1643,19 +1633,27 @@ class CurriculumVitae extends Component {
                                                 justifyContent: 'space-between',
                                             }}
                                         >
-                                            <div>
+                                            {/* <div>
                                                 Identity and Access Management System
+                                            </div> */}
+                                            <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', width: '100%'}}>
+                                                <span>
+                                                    Identity and Access Management System
+                                                </span>
+                                                <span>
+                                                    Telkom Indonesia
+                                                </span>
                                             </div>
-                                            <div
+                                            {/* <div
                                                 style={{
                                                     color:'rgba(0,0,0,.6)',fontWeight:'600'
                                                 }}
                                             >
                                                 Telkom Indonesia
-                                            </div>
+                                            </div> */}
                                         </div>
                                     </div>
-                                    <div style={{color:'rgba(0,0,0,.4)',fontWeight:'800',marginBottom:'4px'}}>Frontend Developer</div>
+                                    <div style={{color:'rgba(0,0,0,.4)',fontWeight:'800',marginBottom:'4px'}}>Frontend</div>
                                     {/* <div style={{fontSize:'15px',fontWeight:'600'}}>(May 2021 - Present)</div> */}
                                     {/* <div style={{fontSize:'15px',fontWeight:'600'}}>Frontend Developer</div> */}
 
@@ -1738,15 +1736,13 @@ class CurriculumVitae extends Component {
                                                 justifyContent: 'space-between',
                                             }}
                                         >
-                                            <div>
-                                                Pijar
-                                            </div>
-                                            <div
-                                                style={{
-                                                    color:'rgba(0,0,0,.6)',fontWeight:'600'
-                                                }}
-                                            >
-                                                Telkom Indonesia
+                                            <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', width: '100%'}}>
+                                                <span>
+                                                    Pijar (Online School Website)
+                                                </span>
+                                                <span>
+                                                    Telkom Indonesia
+                                                </span>
                                             </div>
                                         </div>
                                     </div>
@@ -1784,15 +1780,13 @@ class CurriculumVitae extends Component {
                                                 justifyContent: 'space-between',
                                             }}
                                         >
-                                            <div>
-                                                Standardization Project
-                                            </div>
-                                            <div
-                                                style={{
-                                                    color:'rgba(0,0,0,.6)',fontWeight:'600'
-                                                }}
-                                            >
-                                                Telkom Indonesia
+                                            <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', width: '100%'}}>
+                                                <span>
+                                                    Standardization Project
+                                                </span>
+                                                <span>
+                                                    Telkom Indonesia
+                                                </span>
                                             </div>
                                         </div>
                                     </div>
@@ -1830,15 +1824,13 @@ class CurriculumVitae extends Component {
                                                 justifyContent: 'space-between',
                                             }}
                                         >
-                                            <div>
-                                                Ina Digital
-                                            </div>
-                                            <div
-                                                style={{
-                                                    color:'rgba(0,0,0,.6)',fontWeight:'600'
-                                                }}
-                                            >
-                                                Telkom Indonesia
+                                            <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', width: '100%'}}>
+                                                <span>
+                                                    Ina Digital
+                                                </span>
+                                                <span>
+                                                    Telkom Indonesia
+                                                </span>
                                             </div>
                                         </div>
                                     </div>
@@ -1925,13 +1917,6 @@ class CurriculumVitae extends Component {
                                         >
                                             <div>
                                                 Jakarta Tango Marathon
-                                            </div>
-                                            <div
-                                                style={{
-                                                    color:'rgba(0,0,0,.6)',fontWeight:'600'
-                                                }}
-                                            >
-                                                
                                             </div>
                                         </div>
                                     </div>
