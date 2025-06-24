@@ -7,7 +7,8 @@ import { Link } from 'react-router-dom';
 class CurriculumVitae extends Component {
     state = { 
         paperWidth:1008,
-        paperHeight:1487,
+        paperHeight: 2830,
+        // paperHeight:1487,
         minHorizontalPadding:20,
 
         isTablet:false,
@@ -172,7 +173,8 @@ class CurriculumVitae extends Component {
                             style={{
                                 // backgroundColor:'rgba(0,0,0,.0)',
                                 backgroundColor:'rgba(105,105,105,.05)',
-                                width:isDesktop?'300px':'100%'
+                                width:isDesktop?'300px':'100%',
+                                display: 'none',
                             }}
                         >
                             <div style={{
@@ -741,7 +743,7 @@ class CurriculumVitae extends Component {
                             style={{
                                 // backgroundColor:'rgba(0,0,0,.1)',
                                 backgroundColor:'rgba(230,230,230,1)',
-                                width:isDesktop?`${this.state.paperWidth-300}px`:'100%',
+                                width:isDesktop?`${this.state.paperWidth}px`:'100%',
                                 padding:this.state.isMobile?'40px 20px 60px':'20px 50px 30px 30px',
                                 color:'rgba(0,0,0,.8)',
                                 position: 'relative',
@@ -870,37 +872,123 @@ class CurriculumVitae extends Component {
                                 display:isDesktop?'block':'none',
                                 margin:this.state.pdf?'0px 0 30px':'30px 0',
                                 border:'0px solid black'
-                                }}>
-                                <Header as={'h1'} style={{fontSize:'42px',fontWeight:'600', color: 'rgba(0,0,0,.8)', margin: '0 0 0 -3px'}}>Indo Halim</Header>
-                                <Header as={'h4'}
-                                    style={{
-                                        margin:'-5px 0 15px',
-                                        color: 'rgba(0,0,0,.6)',
-                                        fontWeight: '500',
-                                        fontSize: '21px',
-                                        // letterSpacing: '2.4px',
-                                    }}>Web Fullstack Developer</Header>
+                            }}>
+                                <div style={{display: 'flex', flexDirection: 'row', position: 'relative'}}>
+                                    
 
-                                <div style={{marginBottom: '15px', display: 'flex', flexDirection: 'row', gap: '1.1em'}}>
-                                    <div style={{whiteSpace: 'nowrap'}}>
-                                        <Icon name='mail' style={{marginRight: '.5em'}}/>
-                                        <span>
-                                            mde50526@gmail.com
-                                        </span>
+                                    <div style={{
+                                        // textAlign:'center',
+                                        width: '150px',
+                                        position: 'relative',
+                                        paddingTop: '150px',
+                                        display:'inline-flex',
+                                        // margin:'auto',
+                                        borderRadius: '150px',
+                                        overflow: 'hidden',
+                                        marginRight: '25px',
+                                        // margin:isDesktop?'0':'0 2em'
+                                        // border: '1px solid white',
+                                        // flexBasis: '150px',
+                                    }}>
+                                        <Image 
+                                            // src='https://react.semantic-ui.com/images/wireframe/image.png' 
+                                            src='/profile-pic-2.jpg'
+                                            // size='small' 
+                                            style={{
+                                                display:'inline-block',
+                                                width: '150px',
+                                                // height: '100%',
+                                                // height:this.state.isMobile?'150px':'271.25636px',
+                                                // height:this.state.isMobile?'150px':'200px',
+                                                position: 'absolute',
+                                                top: '-5px',
+                                                left: '0'
+                                            }}
+                                            
+                                        />
                                     </div>
-                                    <div style={{whiteSpace: 'nowrap'}}>
-                                        <Icon name='phone' style={{marginRight: '.5em'}}/>
-                                        <span >
-                                            +6281999041167 (<span style={{fontWeight: '700', color: 'rgba(0,0,0,.7)'}}>whatsapp</span>)
-                                        </span>
+
+                                    <div
+                                        style={{
+                                            flexBasis: 'auto'
+                                        }}
+                                    >
+                                        <Header as={'h1'} style={{fontSize:'42px',fontWeight:'600', color: 'rgba(0,0,0,.8)', margin: '0 0 0 -3px'}}>Indo Halim</Header>
+                                        <Header as={'h4'}
+                                            style={{
+                                                margin:'-5px 0 15px',
+                                                color: 'rgba(0,0,0,.6)',
+                                                fontWeight: '500',
+                                                fontSize: '21px',
+                                                // letterSpacing: '2.4px',
+                                            }}>Web Fullstack Developer</Header>
+
+                                        <div style={{marginBottom: '15px', display: 'block'}}>
+                                            <div style={{whiteSpace: 'nowrap', display: 'inline-block', marginRight: '1.5rem'}}>
+                                                <span style={{fontWeight: 'bold', marginRight: '.5rem'}}>
+                                                    Place and Date of Birth: 
+                                                </span>
+                                                <span>
+                                                    Jakarta, 12 October 1987
+                                                </span>
+                                            </div>
+                                            <div style={{whiteSpace: 'nowrap', display: 'inline-block', marginRight: '1.5rem'}}>
+                                                <span style={{fontWeight: 'bold', marginRight: '.5rem'}}>
+                                                    Gender:
+                                                </span>
+                                                <span >
+                                                    Male
+                                                </span>
+                                            </div>
+                                            <div style={{whiteSpace: 'nowrap', display: 'inline-block', marginRight: '1.5rem'}}>
+                                                <span style={{fontWeight: 'bold', marginRight: '.5rem'}}>
+                                                    Marital Status:
+                                                </span>
+                                                <span >
+                                                    Single
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div style={{marginBottom: '0px', display: 'flex', flexDirection: 'row', gap: '1.1em'}}>
+                                            <div style={{whiteSpace: 'nowrap'}}>
+                                                <Icon name='mail' style={{marginRight: '.5em'}}/>
+                                                <span>
+                                                    mde50526@gmail.com
+                                                </span>
+                                            </div>
+                                            <div style={{whiteSpace: 'nowrap'}}>
+                                                <Icon name='phone' style={{marginRight: '.5em'}}/>
+                                                <span >
+                                                    +6281999041167 (<span style={{fontWeight: '700', color: 'rgba(0,0,0,.7)'}}>whatsapp</span>)
+                                                </span>
+                                            </div>
+                                            <div style={{whiteSpace: 'nowrap'}}>
+                                                <Icon name='linkedin' style={{marginRight: '.5em', marginLeft: '0em'}}/>
+                                                <span style={{wordBreak: 'break-word', wordWrap: ''}}>
+                                                    linkedin.com/in/indo-halim
+                                                </span>
+                                            </div>
+                                        </div>
+
                                     </div>
-                                    <div style={{whiteSpace: 'nowrap'}}>
-                                        <Icon name='linkedin' style={{marginRight: '.5em', marginLeft: '0em'}}/>
-                                        <span style={{wordBreak: 'break-word', wordWrap: ''}}>
-                                            linkedin.com/in/indo-halim
-                                        </span>
-                                    </div>
+                                    
                                 </div>
+
+                                <div style={{
+                                    width:'100%',
+                                    height:'1.5px',
+                                    background:'rgba(0,0,0,.25)',
+                                    margin:'20px 0px 2px 0',
+                                }}/>
+
+                                <div style={{
+                                    width:'95%',
+                                    height:'2px',
+                                    background:'rgba(0,0,0,.25)',
+                                    margin:'0px 0 25px 0'
+                                }}/>
+
 
                                 {/* <div
                                     style={{
@@ -1065,35 +1153,23 @@ class CurriculumVitae extends Component {
                                     </div>
                                 </div> */}
 
-                                <div style={{
-                                    width:'100%',
-                                    height:'1.5px',
-                                    background:'rgba(0,0,0,.25)',
-                                    margin:'50px 0px 2px 0',
-                                }}/>
-
-                                <div style={{
-                                    width:'95%',
-                                    height:'2px',
-                                    background:'rgba(0,0,0,.25)',
-                                    margin:'0px 0 25px 0'
-                                }}/>
 
                                 {/* <div style={{fontSize:'18px',marginBottom:'5px'}}>Email: mde50526@gmail.com</div>
                                 <div style={{fontSize:'18px'}}>Whatsapp: +6281999041167</div> */}
                             </div>
 
-                            {/* <div style={{marginTop: '20px',marginBottom:'25px',border:'0px solid black'}}>
+                            <div style={{marginTop: '20px',marginBottom:'25px',border:'0px solid black'}}>
                                 <h2 style={{fontWeight:'400',letterSpacing:'3px',marginBottom:'.2em'}}>Summary</h2>
                                 <div style={{fontSize:'15px', marginLeft:'15px'}}>
                                     {this.state.summary}
                                 </div>
-                            </div> */}
+                            </div>
 
                             <div style={{marginBottom:'25px',border:'0px solid black', display: "block"}}>
                                 <h2 style={{fontWeight:'400',letterSpacing:'3px',marginBottom:'.4em'}}>Education</h2>
                                 <div style={{marginLeft:'15px', marginBottom: '15px'}}>
-                                    <div style={{fontSize:'15px',fontWeight:'800', color: 'rgba(0,0,0,.65)',margin:'10px 0 5px'}}>
+                                    <div style={{fontWeight: 'normal'}}>- Non Formal Education -</div>
+                                    <div style={{fontSize:'15px',fontWeight:'800', color: 'rgba(0,0,0,.65)',margin:'0px 0 5px'}}>
                                         {/* <div>Hacktiv8 Coding Bootcamp - 2021</div> */}
                                         Hacktiv8 Coding Bootcamp
                                     </div>
@@ -1132,7 +1208,8 @@ class CurriculumVitae extends Component {
                                 </div> */}
                                 <div style={{marginLeft:'15px'}}>
                                     {/* <div>2006 - 2009</div> */}
-                                    <div style={{fontSize:'15px',fontWeight:'800', color: 'rgba(0,0,0,.65)',margin:'10px 0 5px'}}>
+                                    <div style={{fontWeight: 'normal'}}>- Formal Education -</div>
+                                    <div style={{fontSize:'15px',fontWeight:'800', color: 'rgba(0,0,0,.65)',margin:'0px 0 5px'}}>
                                         King's College, University of London
                                     </div>
                                     <div
@@ -1152,7 +1229,7 @@ class CurriculumVitae extends Component {
                             <div style={{
                                 border:'0px solid white',
                                 position:'relative',
-                                marginBottom:'25px',
+                                marginBottom:'35px',
                                 // maxWidth:'570px',
                                 }}>
                                 <h2 style={{fontWeight:'400',letterSpacing:'3px'}}>Experience</h2>
@@ -1616,7 +1693,7 @@ class CurriculumVitae extends Component {
                             </div> */}
 
 
-                            <div style={{marginBottom:'25px',border:'0px solid black'}}>
+                            <div style={{marginBottom:'35px',border:'0px solid black'}}>
                                 <h2 style={{fontWeight:'400',letterSpacing:'3px',marginBottom:'.4em'}}>Projects</h2>
                                 <div 
                                     style={{
@@ -1904,6 +1981,8 @@ class CurriculumVitae extends Component {
                                     style={{
                                         marginLeft:'15px',
                                         // paddingBottom: '6px',
+                                        // marginTop: '170px',
+                                        paddingTop: '40px',
                                         marginBottom: '5px',
                                         borderBottom: '0px solid rgba(0,0,0,.25)',
                                     }}
@@ -2027,7 +2106,7 @@ class CurriculumVitae extends Component {
 
                             </div>
 
-                            {/* <div style={{marginBottom:'20px',border:'0px solid black'}}>
+                            <div style={{marginBottom:'35px',border:'0px solid black'}}>
                                 <h1 style={{fontWeight:'400',letterSpacing:'3px',marginBottom:'.4em'}}>Achievement</h1>
                                 <div 
                                     style={{
@@ -2045,7 +2124,44 @@ class CurriculumVitae extends Component {
                                         </div>
                                     </div>
                                 </div>
-                            </div> */}
+                            </div>
+
+                            <div style={{marginBottom: '20px'}}>
+                                <h1 style={{fontWeight:'400',letterSpacing:'3px',marginBottom:'.4em'}}>Skills</h1>
+                                <Label style={style.skillLabel}>HTML/CSS</Label>
+                                <Label style={style.skillLabel}>Javascript</Label>
+                                <Label style={style.skillLabel}>Typecript</Label>
+                                <Label style={style.skillLabel}>React JS</Label>
+                                <Label style={style.skillLabel}>Vue JS</Label>
+                                {/* <Label style={style.skillLabel}>React Native</Label> */}
+                                <Label style={style.skillLabel}>
+                                    Yew
+                                    <span
+                                        style={{
+                                            background: "white",
+                                            letterSpacing: "1px",
+                                            padding: "2px 4px",
+                                            marginLeft: "1em",
+                                            // border: "1px solid orange",
+                                            borderRadius: "3px",
+                                            fontSize: "10px",
+                                            fontWeight: "bolder",
+                                            // color: "orange",
+                                            color:'rgba(0,0,0,.6)',
+                                            verticalAlign: "1px"
+                                        }}
+                                    >
+                                        Rust
+                                    </span>
+                                </Label>
+                                <Label style={style.skillLabel}>Node JS/Express</Label>
+                                {/* <Label style={style.skillLabel}>My Sql</Label> */}
+                                <Label style={style.skillLabel}>Postgre Sql</Label>
+                                {/* <Label style={style.skillLabel}>MongoDB</Label> */}
+                                {/* <Label style={style.skillLabel}>Sequelize</Label> */}
+                                <Label style={style.skillLabel}>Redis</Label>
+                                <Label style={style.skillLabel}>Socket IO</Label>
+                            </div>
                         
                         </Grid.Column>
                     </Grid.Row>
