@@ -1165,7 +1165,7 @@ class CurriculumVitae extends Component {
                                 </div>
                             </div>
 
-                            <div style={{marginBottom:'25px',border:'0px solid black', display: "block"}}>
+                            <div style={{marginBottom:'35px',border:'0px solid black', display: "block"}}>
                                 <h2 style={{fontWeight:'400',letterSpacing:'3px',marginBottom:'.4em'}}>Education</h2>
                                 <div style={{marginLeft:'15px', marginBottom: '15px'}}>
                                     <div style={{fontWeight: 'normal'}}>- Non Formal Education -</div>
@@ -1232,10 +1232,10 @@ class CurriculumVitae extends Component {
                                 marginBottom:'35px',
                                 // maxWidth:'570px',
                                 }}>
-                                <h2 style={{fontWeight:'400',letterSpacing:'3px'}}>Experience</h2>
+                                <h2 style={{fontWeight:'400',letterSpacing:'3px', marginBottom: '5px'}}>Work Experiences</h2>
                                 <Grid style={{border:'0px solid red', marginLeft:'11px'}}>
                                     <Grid.Row>
-                                        <Grid.Column width={3}>
+                                        <Grid.Column width={3} style={{display: 'none'}}>
                                             <div style={{
                                                 height:'100%',
                                                 position:'relative',
@@ -1366,7 +1366,7 @@ class CurriculumVitae extends Component {
                                             </div>
                                         </Grid.Column>
                                         <Grid.Column
-                                            width={13}
+                                            width={16}
                                             style={{
                                                 height:this.state.pdf?'auto':'auto',
                                                 border:'0px solid yellow',
@@ -1426,7 +1426,7 @@ class CurriculumVitae extends Component {
                                                     marginBottom: '4px',
                                                 }}>
                                                     <div style={{fontSize:'15px',fontWeight:'800', color: 'rgba(0,0,0,.65)'}}>Web Developer - Front End</div>
-                                                    <div style={{fontSize:'15px',fontWeight:'800', color: 'rgba(0,0,0,.65)'}}>Telkom Indonesia</div>
+                                                    <div style={{fontSize:'15px',fontWeight:'800', color: 'rgba(0,0,0,.65)'}}>Telkom Indonesia<span style={{fontWeight: '800', marginLeft: '20px'}}>(2021 - Present)</span></div>
                                                 </div>
                                                 {/* <Label style={style.skillLabel}>
                                                     Yew
@@ -1504,7 +1504,7 @@ class CurriculumVitae extends Component {
                                                     <div class="item">
                                                         <i class="check square icon"></i>
                                                         <div class="content">
-                                                            <div class="description">Code reviews to uphold high coding standards.</div>
+                                                            <div class="description">Code reviews to uphold high coding standards. Wrote well-structured and easy-to-maintain code.</div>
                                                         </div>
                                                     </div>
                                                     <div class="item">
@@ -1548,6 +1548,109 @@ class CurriculumVitae extends Component {
                                                     </div> */}
                                                 </div>
                                                 {/* <div style={{marginBottom: '.5em'}}>Developed and maintained web application with rust based language, Created and designed web application, provided training, and assigned tasks to team members</div> */}
+                                                <div style={{
+                                                    width:'100%',
+                                                    borderTop: '1px dashed rgba(0,0,0,.25)',
+                                                    margin:'12px 0px 0px 0',
+                                                }}/>
+                                            </div>
+
+                                            <div style={{
+                                                marginTop: '21px',
+                                                marginBottom:'10px',
+                                                height:isDesktop?'auto':this.state.isTablet?'82.33px':'391px'
+                                                }}>
+
+                                                <div style={{
+                                                    display: 'flex',
+                                                    justifyContent: 'space-between',
+                                                    marginBottom: '4px',
+                                                }}>
+                                                    <div style={{fontSize:'15px',fontWeight:'800', color: 'rgba(0,0,0,.65)'}}>Web Designer</div>
+                                                    <div style={{fontSize:'15px',fontWeight:'800', color: 'rgba(0,0,0,.65)'}}><span style={{fontWeight: '800', marginLeft: '20px'}}>(2019 - 2021)</span></div>
+                                                </div>
+                                                    <div style={{marginBottom: '.5em'}}>
+                                                        <div
+                                                        class="ui list"
+                                                        style={{marginTop: "7px"}}
+                                                    >
+                                                        <div class="item">
+                                                            <i class="check square icon"></i>
+                                                            <div class="content">
+                                                                <div class="description">Designed and developed visually appealing, responsive websites using HTML, CSS, and JavaScript, ensuring optimal performance across all devices.</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <i class="check square icon"></i>
+                                                            <div class="content">
+                                                                <div class="description">Focused on user experience by keeping designs simple, clean, and easy to use.</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <i class="check square icon"></i>
+                                                            <div class="content">
+                                                                <div class="description">Improved site speed and performance by optimizing code, images, and assets.</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <i class="check square icon"></i>
+                                                            <div class="content">
+                                                                <div class="description">Regularly updated websites with new content, features, or design tweaks based on feedback.</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    Worked independently on various online projects focused on website design and frontend development using HTML, CSS, and JavaScript. Additionally, managed and maintained two websites for small businesses</div>
+                                                <div style={{
+                                                    width:'100%',
+                                                    borderTop: '1px dashed rgba(0,0,0,.25)',
+                                                    margin:'12px 0px 0px 0',
+                                                }}/>
+                                            </div>
+
+                                            <div style={{
+                                                marginTop: '21px',
+                                                marginBottom:'10px',
+                                                height:isDesktop?'auto':this.state.isTablet?'82.33px':'391px'
+                                                }}>
+
+                                                <div style={{
+                                                    display: 'flex',
+                                                    justifyContent: 'space-between',
+                                                    marginBottom: '4px',
+                                                }}>
+                                                    <div style={{fontSize:'15px',fontWeight:'800', color: 'rgba(0,0,0,.65)'}}>Construction Manager</div>
+                                                    <div style={{fontSize:'15px',fontWeight:'800', color: 'rgba(0,0,0,.65)'}}>PT Hawila Berkat Anugrah<span style={{fontWeight: '800', marginLeft: '20px'}}>(2010 - 2019)</span></div>
+                                                </div>
+                                                <div
+                                                    class="ui list"
+                                                    style={{marginTop: "7px"}}
+                                                >
+                                                    <div class="item">
+                                                        <i class="check square icon"></i>
+                                                        <div class="content">
+                                                            <div class="description">Managed construction-related projects in coordination with the operational department to support building development and functionality.</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <i class="check square icon"></i>
+                                                        <div class="content">
+                                                            <div class="description">Organize project timelines, resources, and contractor coordination to ensure on-time and within-budget delivery.</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <i class="check square icon"></i>
+                                                        <div class="content">
+                                                            <div class="description">Led on-site coordination to resolve issues, mitigate risks, and maintain workflow continuity during critical project phases.</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <i class="check square icon"></i>
+                                                        <div class="content">
+                                                            <div class="description">Explored and analyzed waste disposal processes within a factory setting to add potential business development.</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                {/* <div style={{marginBottom: '.5em'}}>Managed construction-related projects in coordination with the operational department to support building development and functionality. And to add potential business development, explored and analyzed waste disposal processes within a factory setting to improve operational efficiency and environmental compliance.</div> */}
                                             </div>
                                             
                                             {/* <div style={{
@@ -1801,6 +1904,7 @@ class CurriculumVitae extends Component {
                                 <div 
                                     style={{
                                         marginLeft:'15px',
+                                        paddingTop: '70px',
                                         // paddingBottom: '6px',
                                         marginBottom: '5px',
                                         borderBottom: '0px solid rgba(0,0,0,.25)',
@@ -1844,8 +1948,9 @@ class CurriculumVitae extends Component {
 
                                 <div 
                                     style={{
-                                        marginLeft:'15px',
+                                        marginLeft: '15px',
                                         // paddingBottom: '6px',
+                                        // paddingTop: '80px',
                                         marginBottom: '5px',
                                         borderBottom: '0px solid rgba(0,0,0,.25)',
                                     }}
@@ -1982,7 +2087,7 @@ class CurriculumVitae extends Component {
                                         marginLeft:'15px',
                                         // paddingBottom: '6px',
                                         // marginTop: '170px',
-                                        paddingTop: '40px',
+                                        paddingTop: '0px',
                                         marginBottom: '5px',
                                         borderBottom: '0px solid rgba(0,0,0,.25)',
                                     }}
