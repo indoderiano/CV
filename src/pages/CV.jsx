@@ -15,7 +15,9 @@ class CurriculumVitae extends Component {
         isMobile:false,
         pdf:true,
 
-        summary: 'Dedicated Frontend Developer with more than 3 years of experience creating high performance, writing clean, maintainable, clear structure codes and visually appealing, and user-friendly web interfaces. Proficient in HTML, CSS, JavaScript, Typescript, and Rust. Seeking opportunities to contribute my skills and expertise to dynamic web development projects.'
+        // summary: 'Dedicated Frontend Developer with more than 3 years of experience creating high performance, writing clean, maintainable, clear structure codes and visually appealing, and user-friendly web interfaces. Proficient in HTML, CSS, JavaScript, Typescript, and Rust. Seeking opportunities to contribute my skills and expertise to dynamic web development projects.'
+
+        summary: 'Experienced Frontend Developer with 4 years of experience in building responsive and user-friendly applications. Skilled in writing clean, well-structured, and scalable code with a strong focus on security and pixel-perfect implementation. Proven ability to standardize code practices across teams for maintainability and performance. In addition to frontend expertise, also familiar with backend concepts and programming in Rust. Currently exploring and interested in learning artificial intelligence to expand problem-solving capabilities and system design knowledge.'
      }
 
     componentDidMount=()=>{
@@ -1265,7 +1267,8 @@ class CurriculumVitae extends Component {
                                                     {
                                                         this.renderTarget()
                                                     }
-                                                    Present
+                                                    2025 <p style={{fontSize: '12px'}}>March</p>
+                                                    {/* Present */}
                                                     {/* 2020 <p style={{fontSize: '12px'}}>September</p> */}
                                                 </div>
                                                 {/* <div style={{
@@ -1426,7 +1429,7 @@ class CurriculumVitae extends Component {
                                                     marginBottom: '4px',
                                                 }}>
                                                     <div style={{fontSize:'15px',fontWeight:'800', color: 'rgba(0,0,0,.65)'}}>Web Developer - Front End</div>
-                                                    <div style={{fontSize:'15px',fontWeight:'800', color: 'rgba(0,0,0,.65)'}}>Telkom Indonesia<span style={{fontWeight: '800', marginLeft: '20px'}}>(2021 - Present)</span></div>
+                                                    <div style={{fontSize:'15px',fontWeight:'800', color: 'rgba(0,0,0,.65)'}}>Telkom Indonesia<span style={{fontWeight: '800', marginLeft: '20px'}}>(2021 May - 2025 March)</span></div>
                                                 </div>
                                                 {/* <Label style={style.skillLabel}>
                                                     Yew
@@ -1566,8 +1569,55 @@ class CurriculumVitae extends Component {
                                                     justifyContent: 'space-between',
                                                     marginBottom: '4px',
                                                 }}>
+                                                    <div style={{fontSize:'15px',fontWeight:'800', color: 'rgba(0,0,0,.65)'}}>Mentor Samsung Solve For Tomorrow</div>
+                                                    <div style={{fontSize:'15px',fontWeight:'800', color: 'rgba(0,0,0,.65)'}}><span style={{fontWeight: '800', marginLeft: '20px'}}>(2025 Jun - 2025 Sep)</span></div>
+                                                </div>
+                                                    <div style={{marginBottom: '.5em'}}>
+                                                        <div
+                                                        class="ui list"
+                                                        style={{marginTop: "7px"}}
+                                                    >
+                                                        <div class="item">
+                                                            <i class="check square icon"></i>
+                                                            <div class="content">
+                                                                <div class="description">Mentored students in a STEM-based innovation competition focused on problem-solving and creating positive social and environmental impact.</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <i class="check square icon"></i>
+                                                            <div class="content">
+                                                                <div class="description">Facilitated workshops on Design Thinking, teamwork, and 4C skills (Communication, Collaboration, Critical Thinking, Creativity).</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <i class="check square icon"></i>
+                                                            <div class="content">
+                                                                <div class="description">Supported participants with AI and digital training while sharing practical insights alongside Samsung experts and partners.</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    {/* Worked independently on various online projects focused on website design and frontend development using HTML, CSS, and JavaScript. Additionally, managed and maintained two websites for small businesses */}
+                                                </div>
+                                                <div style={{
+                                                    width:'100%',
+                                                    borderTop: '1px dashed rgba(0,0,0,.25)',
+                                                    margin:'12px 0px 0px 0',
+                                                }}/>
+                                            </div>
+
+                                            <div style={{
+                                                marginTop: '21px',
+                                                marginBottom:'10px',
+                                                height:isDesktop?'auto':this.state.isTablet?'82.33px':'391px'
+                                                }}>
+
+                                                <div style={{
+                                                    display: 'flex',
+                                                    justifyContent: 'space-between',
+                                                    marginBottom: '4px',
+                                                }}>
                                                     <div style={{fontSize:'15px',fontWeight:'800', color: 'rgba(0,0,0,.65)'}}>Web Designer</div>
-                                                    <div style={{fontSize:'15px',fontWeight:'800', color: 'rgba(0,0,0,.65)'}}><span style={{fontWeight: '800', marginLeft: '20px'}}>(2019 - 2021)</span></div>
+                                                    <div style={{fontSize:'15px',fontWeight:'800', color: 'rgba(0,0,0,.65)'}}><span style={{fontWeight: '800', marginLeft: '20px'}}>(2019 Feb - 2020 Nov)</span></div>
                                                 </div>
                                                     <div style={{marginBottom: '.5em'}}>
                                                         <div
@@ -1599,7 +1649,8 @@ class CurriculumVitae extends Component {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    Worked independently on various online projects focused on website design and frontend development using HTML, CSS, and JavaScript. Additionally, managed and maintained two websites for small businesses</div>
+                                                    {/* Worked independently on various online projects focused on website design and frontend development using HTML, CSS, and JavaScript. Additionally, managed and maintained two websites for small businesses */}
+                                                </div>
                                                 <div style={{
                                                     width:'100%',
                                                     borderTop: '1px dashed rgba(0,0,0,.25)',
@@ -1619,7 +1670,7 @@ class CurriculumVitae extends Component {
                                                     marginBottom: '4px',
                                                 }}>
                                                     <div style={{fontSize:'15px',fontWeight:'800', color: 'rgba(0,0,0,.65)'}}>Construction Manager</div>
-                                                    <div style={{fontSize:'15px',fontWeight:'800', color: 'rgba(0,0,0,.65)'}}>PT Hawila Berkat Anugrah<span style={{fontWeight: '800', marginLeft: '20px'}}>(2010 - 2019)</span></div>
+                                                    <div style={{fontSize:'15px',fontWeight:'800', color: 'rgba(0,0,0,.65)'}}>PT Hawila Berkat Anugrah<span style={{fontWeight: '800', marginLeft: '20px'}}>(2010 Jan - 2019 Jan)</span></div>
                                                 </div>
                                                 <div
                                                     class="ui list"
@@ -1796,7 +1847,7 @@ class CurriculumVitae extends Component {
                             </div> */}
 
 
-                            <div style={{marginBottom:'35px',border:'0px solid black'}}>
+                            <div style={{marginBottom:'35px',border:'0px solid black', marginTop: '450px', paddingTop: '50px'}}>
                                 <h2 style={{fontWeight:'400',letterSpacing:'3px',marginBottom:'.4em'}}>Projects</h2>
                                 <div 
                                     style={{
@@ -1904,7 +1955,7 @@ class CurriculumVitae extends Component {
                                 <div 
                                     style={{
                                         marginLeft:'15px',
-                                        paddingTop: '70px',
+                                        // paddingTop: '70px',
                                         // paddingBottom: '6px',
                                         marginBottom: '5px',
                                         borderBottom: '0px solid rgba(0,0,0,.25)',
@@ -2221,7 +2272,7 @@ class CurriculumVitae extends Component {
                                         borderBottom: '0px solid rgba(0,0,0,.25)',
                                     }}
                                 >
-                                    <div style={{fontSize:'15px',fontWeight:'800', color: 'rgba(0,0,0,.65)'}}>40% Improved in Development Efficiency</div>
+                                    <div style={{fontSize:'15px',fontWeight:'800', color: 'rgba(0,0,0,.65)'}}>Improved in Development Efficiency</div>
 
                                     <div style={{marginTop: '2px'}}>
                                         <div class="content">
@@ -2237,6 +2288,7 @@ class CurriculumVitae extends Component {
                                 <Label style={style.skillLabel}>Javascript</Label>
                                 <Label style={style.skillLabel}>Typecript</Label>
                                 <Label style={style.skillLabel}>React JS</Label>
+                                <Label style={style.skillLabel}>Next JS</Label>
                                 <Label style={style.skillLabel}>Vue JS</Label>
                                 {/* <Label style={style.skillLabel}>React Native</Label> */}
                                 <Label style={style.skillLabel}>
