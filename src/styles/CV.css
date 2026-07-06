@@ -1,0 +1,553 @@
+/* CV Container and Page Setup */
+.cv-container {
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    padding: 32px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cv-page {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styling */
+.cv-header {
+    background: white;
+    padding: 30px 40px;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.header-left {
+    flex: 1;
+}
+
+.header-right {
+    flex-shrink: 0;
+    margin-left: 30px;
+}
+
+.cv-name {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0 0 3px 0;
+    letter-spacing: -0.5px;
+    color: #1a1a1a;
+}
+
+.cv-title {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 0 12px 0;
+    opacity: 1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #666;
+}
+
+.header-contact {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.header-contact span {
+    display: inline;
+}
+
+.separator {
+    margin: 0 6px;
+    color: #999;
+}
+
+.email-link {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.email-link:hover {
+    text-decoration: underline;
+}
+
+/* Profile Picture in Header */
+.header-right .profile-picture {
+    margin: 0;
+}
+
+.profile-picture {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-placeholder {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #e8e8e8 0%, #f5f5f5 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    color: #999;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid #e0e0e0;
+}
+
+.profile-photo {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid #e0e0e0;
+}
+
+/* Main Content Layout */
+.cv-content {
+    display: block;
+    flex: 1;
+}
+
+/* Sidebar Styling - Not Used */
+.cv-sidebar {
+    display: none;
+}
+
+/* Profile Picture */
+.profile-picture {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-placeholder {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #2c5282 0%, #2d5f7f 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+    color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid #e0e0e0;
+}
+
+/* Sidebar Sections - Not Used */
+.sidebar-section {
+    display: none;
+}
+
+/* Personal Info */
+.info-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.info-item:last-of-type {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.info-label {
+    font-weight: 600;
+    color: #2c5282;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+}
+
+.info-value {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+/* Contact Info */
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    gap: 8px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.contact-item:last-of-type {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+.contact-icon {
+    font-size: 16px;
+    min-width: 20px;
+}
+
+.contact-text {
+    color: #555;
+    font-size: 16px;
+    word-break: break-word;
+    line-height: 1.4;
+}
+
+/* Skills Styling */
+.sidebar-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.skill-badge {
+    background-color: #2c5282;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+/* Education Styling */
+.education-item {
+    margin-bottom: 12px;
+}
+
+.education-item:last-child {
+    margin-bottom: 0;
+}
+
+.education-school {
+    margin: 0 0 2px 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.education-degree {
+    margin: 2px 0;
+    font-size: 16px;
+    color: #555;
+    font-weight: 400;
+}
+
+.education-grade {
+    margin: 0;
+    font-size: 16px;
+    color: #666;
+}
+
+.education-grade {
+    margin: 2px 0 0 0;
+    font-size: 15px;
+    color: #999;
+}
+
+/* Main Content Styling */
+.cv-main {
+    width: 100%;
+    padding: 40px;
+}
+
+.content-section {
+    margin-bottom: 25px;
+}
+
+.content-section:last-child {
+    margin-bottom: 0;
+}
+
+.section-title {
+    font-size: 19px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 12px 0;
+    text-transform: capitalize;
+    letter-spacing: 0;
+    border-bottom: 1px solid #333;
+    padding-bottom: 8px;
+}
+
+.section-text {
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+    margin: 0;
+    text-align: left;
+}
+
+/* Job Items */
+.job-item {
+    margin-bottom: 18px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.job-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 4px;
+    gap: 20px;
+}
+
+.job-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+.job-duration {
+    font-size: 16px;
+    color: #1a1a1a;
+    white-space: nowrap;
+    font-weight: 700;
+}
+
+.job-company {
+    font-size: 16px;
+    color: #1a1a1a;
+    margin: 0 0 6px 0;
+    font-weight: 700;
+}
+
+.job-duties {
+    margin: 8px 0 0 20px;
+    padding: 0;
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.job-duties li {
+    margin-bottom: 6px;
+}
+
+/* Skills List Bullets */
+.skills-list-bullets {
+    margin: 0;
+    padding-left: 20px;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.8;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 24px;
+    row-gap: 5px;
+}
+
+.skills-list-bullets li {
+    margin-bottom: 0;
+}
+
+/* Project Items */
+.project-item {
+    margin-bottom: 12px;
+}
+
+.project-item:last-child {
+    margin-bottom: 0;
+}
+
+.project-header {
+    margin-bottom: 2px;
+}
+
+.project-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 2px 0;
+}
+
+.project-meta {
+    font-size: 16px;
+    color: #666;
+    margin: 2px 0 4px 0;
+    font-weight: 400;
+}
+
+.project-description {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Achievement Items */
+.achievement-item {
+    margin-bottom: 10px;
+}
+
+.achievement-item:last-child {
+    margin-bottom: 0;
+}
+
+.achievement-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 3px 0;
+}
+
+.achievement-description {
+    font-size: 16px;
+    color: #555;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Print Styles */
+@media print {
+    .cv-container {
+        background-color: white;
+        padding: 0;
+    }
+
+    .cv-page {
+        max-width: 100%;
+        box-shadow: none;
+        margin: 0;
+    }
+
+    .cv-header {
+        break-after: avoid;
+    }
+
+    .content-section {
+        break-inside: avoid;
+    }
+
+    .job-item {
+        break-inside: avoid;
+    }
+
+    .project-item {
+        break-inside: avoid;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cv-header {
+        flex-direction: column;
+        padding: 25px 30px;
+    }
+
+    .header-right {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .profile-placeholder {
+        width: 100px;
+        height: 100px;
+        font-size: 45px;
+    }
+
+    .cv-main {
+        padding: 25px 30px;
+    }
+
+    .cv-name {
+        font-size: 35px;
+    }
+
+    .cv-title {
+        font-size: 15px;
+    }
+
+    .section-title {
+        font-size: 18px;
+    }
+
+    .section-text {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cv-page {
+        box-shadow: none;
+    }
+
+    .cv-header {
+        padding: 20px 15px;
+    }
+
+    .profile-placeholder {
+        width: 80px;
+        height: 80px;
+        font-size: 35px;
+    }
+
+    .cv-main {
+        padding: 20px 15px;
+    }
+
+    .cv-name {
+        font-size: 28px;
+    }
+
+    .cv-title {
+        font-size: 14px;
+    }
+
+    .header-contact {
+        font-size: 15px;
+    }
+
+    .section-title {
+        font-size: 16px;
+    }
+
+    .section-text {
+        font-size: 14px;
+    }
+
+    .job-duties {
+        margin-left: 18px;
+        font-size: 15px;
+    }
+
+    .skills-list-bullets {
+        padding-left: 18px;
+        font-size: 15px;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 16px;
+    }
+}
